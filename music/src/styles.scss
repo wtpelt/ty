@@ -451,7 +451,7 @@ p {
   margin: 15px;
   width: 170px;
   height: 170px;
-  border-radius: 100%;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1330,7 +1330,7 @@ input[type="checkbox"]:checked ~ label:hover {
   width: 94%;
   margin-top: 50px;
   margin-bottom: 10px;
-  border-radius: 50px;
+  border-radius: 15px;
   box-shadow: 0.1px 0.1px 5px #fff;
   transition: all 0.1s ease-in;
   &:hover {
@@ -1346,7 +1346,7 @@ input[type="checkbox"]:checked ~ label:hover {
   height: 80px;
   display: flex;
   align-items: center;
-  border-radius: 50px;
+  border-radius: 15px;
   transition: all 0.1s ease;
   &:hover {
     background-color: #111;
@@ -1585,8 +1585,9 @@ img::selection {
   width: 50px;
   height: 50px;
   background: {
-    size: cover;
-    // image: url("./assets/digital-metta-logo.png");
+    size: contain;
+    repeat: no-repeat;
+    image: url("./assets/tylepathy-rainbow-logo.png");
   }
   transition: all 0.2s ease;
   &:hover {

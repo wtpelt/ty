@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './album-1.component.html',
+  templateUrl: './album-three.component.html',
   // styleUrls: ['./music.component.scss']
 })
-export class Album1Component {
+export class AlbumThreeComponent {
   title = 'ReGen Deep Ambient Remixes';
 }
+

@@ -6,7 +6,7 @@ import { MusicComponent } from './app/music/music.component';
 const routes: Routes = [
   { path: 'music-component', component: MusicComponent },
   { path: 'about-component', component: AboutComponent },
-  { path: '',   redirectTo: '/app-component', pathMatch: 'full' }, // redirect to `first-component`
+  { path: '',   redirectTo: '', pathMatch: 'full' }, // redirect to `first-component`
   // { path: '**', component: PageNotFoundComponent },  //
 ];
 // configures NgModule imports and exports

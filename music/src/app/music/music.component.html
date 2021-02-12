@@ -1,30 +1,43 @@
-<!-- <h2>First Component</h2>
-
-<nav>
-  <ul>
-    <li><a routerLink="child-a">Child A</a></li>
-    <li><a routerLink="child-b">Child B</a></li>
-  </ul>
-</nav>
-
-<router-outlet></router-outlet> -->
 <div id="section-portfolio">
+
   <div class="portfolio-client-list-wrap">
+
     <div class="web-subsect-col">
+      <a routerLink="album-four">
       <div
         for="toggle-nav-open-checkbox-v1-b"
         class="label-v1-b web-port-sub-labels"
       >
         <div class="logo-img-wrap">
           <img
-            src="assets/Peyote-Canyon---Cover.jpg"
+            src="assets/Dreamstep-Lovescape-Artwork.jpg"
+            alt="Dreamstep Lovescape"
+            class="logo-imgs"
+          />
+        </div>
+      </div>
+    </a>
+    </div>
+
+    <div class="web-subsect-col">
+      <a routerLink="album-three">
+      <div
+        for="toggle-nav-open-checkbox-v1-b"
+        class="label-v1-b web-port-sub-labels"
+      >
+        <div class="logo-img-wrap">
+          <img
+            src="assets/Tylepathy-Remixes-One-With-Nature-Artwork.jpg"
             alt="Peyote Canyon Artwork"
             class="logo-imgs"
           />
         </div>
       </div>
+    </a>
     </div>
+
     <div class="web-subsect-col">
+      <a routerLink="album-two">
       <div
         for="toggle-nav-open-checkbox-v1-c"
         class="label-v1-c web-port-sub-labels"
@@ -37,17 +50,27 @@
           />
         </div>
       </div>
+    </a>
     </div>
+
     <div class="web-subsect-col">
+      <a routerLink="album-one">
+
       <div class="label-v1-a web-port-sub-labels">
         <div class="logo-img-wrap">
           <img
-            src="tylepathy/images/Liquid-Bloom-ReGen-Deep-Ambient-Remixes-FINAL.jpg"
+            src="assets/Liquid-Bloom-ReGen-Deep-Ambient-Remixes-FINAL.jpg"
             alt="ReGen Deep Ambient Remixes Artwork"
             class="logo-imgs"
           />
         </div>
       </div>
+      </a>
     </div>
+
   </div>
+
 </div>
+
+<router-outlet></router-outlet>
+

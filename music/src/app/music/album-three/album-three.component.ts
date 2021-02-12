@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-album-three',
   templateUrl: './album-three.component.html',
   // styleUrls: ['./music.component.scss']
 })
 export class AlbumThreeComponent {
-  title = 'ReGen Deep Ambient Remixes';
+  title = 'Tylepathy Remixes - One With Nature';
 }
 

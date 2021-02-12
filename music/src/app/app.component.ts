@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,9 +10,7 @@ export class AppComponent {
   title = 'music';
   public name: string;
 
-  constructor(
-    private route: ActivatedRoute,
-  ) {}
+  constructor(private router: Router, private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.route.queryParams.subscribe(params => {

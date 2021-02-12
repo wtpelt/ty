@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-music',
   templateUrl: './music.component.html',
   // styleUrls: ['./music.component.scss']
 })
 export class MusicComponent {
+  constructor() {}
   title = 'music';
+
 }

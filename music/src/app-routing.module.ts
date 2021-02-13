@@ -8,7 +8,7 @@ import { AlbumTwoComponent } from './app/music/album-two/album-two.component';
 import { MusicComponent } from './app/music/music.component';
 
 const routes: Routes = [
-  { path: 'music-component', component: MusicComponent ,
+  { path: 'ty/music-component', component: MusicComponent ,
   children: [
     {
       path: 'album-one', // child route path
@@ -28,7 +28,7 @@ const routes: Routes = [
     },
   ],
 },
-  { path: 'about-component', component: AboutComponent },
+  { path: 'ty/about-component', component: AboutComponent },
   { path: '',   redirectTo: '', pathMatch: 'full' }, // redirect to `first-component`
   // { path: '**', component: PageNotFoundComponent },  //
 

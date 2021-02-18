@@ -1,18 +1,22 @@
 footer {
   margin-top: 50px;
   position: relative;
+  background-color: #353a40;
+  opacity: .7;
 }
 .footer-copyright {
   margin: {
     top: 50px;
-    bottom: 7px;
   }
   text-align: center;
   font-size: 14px;
 }
 
 .social-icons {
-  background: black;
   padding: 5px;
   border-radius: 5px;
+}
+
+.copyright-row {
+  padding-bottom: 5px;
 }

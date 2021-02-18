@@ -20,7 +20,6 @@ import { MusicComponent } from './music/music.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // RouterModule,
   ],
   exports: [
     HeaderComponent,

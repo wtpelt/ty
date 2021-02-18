@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-album-one',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   // styleUrls: ['./music.component.scss']
 })
 export class AlbumOneComponent {
+  constructor(private router: Router, private route: ActivatedRoute) {}
   title = 'ReGen Deep Ambient Remixes';
 }

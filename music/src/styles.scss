@@ -2,6 +2,11 @@
 Custom Style
 */
 
+.album-iframe{
+  width: 700px;
+}
+
+
 .social-row-footer a {
   margin: 0 15px 0 15px;
 }
@@ -464,23 +469,22 @@ p {
   pointer-events: auto;
   transition: all 0.1s ease-out;
   background-color: #353a40;
-  box-shadow: inset 0.3px 0 1.65px 0.1px #000, inset -0.3px 0 6.5px 0.1px #000;
+  // box-shadow: inset 0.3px 0 1.65px 0.1px #000, inset -0.3px 0 6.5px 0.1px #000;
   &:hover,
   :focus {
     filter: none;
-    box-shadow: inset 0.3px 0 1.65px 1px #000, inset -0.3px 0 6.5px 1px #000;
+    box-shadow: inset 0.3px 0 1.65px 1px #9795ba;
     transform: scale(1.05);
+  }
+  &:active{
+    box-shadow: inset 0.3px 0 1.65px 1px #9795ba;
+    transform: scale(0.95);
+  }
+  &:visited{
+    background-color: #c2cedd;
   }
 }
 
-.logo-florida {
-  width: 100px;
-  height: 100px;
-}
-.fdoe-logo {
-  width: 120px;
-  height: auto;
-}
 #section-portfolio-row1 {
   display: flex;
   justify-content: center;
@@ -489,29 +493,8 @@ p {
   display: flex;
   justify-content: center;
 }
-.logo-doca {
-  width: 75px;
-  background: white;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-}
-.logo-dhr {
-  background: black;
-  width: 100px;
-  border-radius: 100%;
-}
-.logo-chan {
-  width: 92px;
-  border-radius: 100%;
-}
-.logo-dlis {
-  width: 100px;
-}
 body {
   background-color: black;
-}
-.logo-sunbiz {
-  width: 120px;
 }
 
 #nav-link-web-app {
@@ -592,7 +575,7 @@ body {
   }
   .portfolio-client-list-wrap {
     column-count: 1;
-    flex-direction: column;
+    flex-direction: row;
   }
   #header {
     position: fixed;
@@ -657,7 +640,7 @@ body {
   .portfolio-client-list-wrap {
     column-count: 1;
     margin-bottom: 50px;
-    flex-direction: column;
+    flex-direction: row;
   }
   #footer-v3 {
     position: relative;
@@ -720,13 +703,21 @@ body {
   .portfolio-client-list-wrap {
     column-count: 1;
     margin-top: 15px;
-    flex-direction: column;
+    flex-direction: row;
   }
   #footer-v3 {
     position: relative;
   }
   #content {
     padding-top: 0;
+  }
+
+  .album-iframe{
+    width: 100%;
+  }
+
+  .web-subsect-col{
+    width: 50%;
   }
 }
 
@@ -789,7 +780,7 @@ body {
   .portfolio-client-list-wrap {
     column-count: 1;
     margin-top: 15px;
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
@@ -862,7 +853,7 @@ body {
 @media only screen and (max-device-width: 767px) and (orientation: landscape) {
   .portfolio-client-list-wrap {
     column-count: 1;
-    margin-bottom: 75px;
+    margin-bottom: 0;
   }
 
   .page-one-column .panel-content .wrap {
@@ -1457,7 +1448,6 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 .web-port-sub-labels {
@@ -1468,9 +1458,6 @@ a {
   color: #fff;
 }
 
-.web-sub-sect {
-  text-align: left;
-}
 .web-sub-sect .p1 {
   text-indent: 50px;
   margin: {
@@ -1518,7 +1505,7 @@ img::selection {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px 0;
+  margin: 5px 0;
 }
 
 .email-icon {
@@ -1628,7 +1615,6 @@ img::selection {
 
 .web-port-sub-labels {
   outline: none;
-  padding: 12px;
   transition: all 0.2s ease;
   &:focus {
     box-shadow: 0.1px 0.1px 15px #fff;
@@ -1646,11 +1632,18 @@ img::selection {
     width: 94vw;
   }
 }
-@media only screen and (min-device-width: 768px) {
-  .web-sub-sect {
-    width: 50vw;
+
+@media only screen and (max-device-width: 767px) {
+  .portfolio-client-list-wrap{
+    flex-wrap: wrap;
   }
 }
+
+// @media only screen and (min-device-width: 768px) {
+//   .web-sub-sect {
+//     // width: 50vw;
+//   }
+// }
 .web-sub-sect a:focus {
   outline: 3px auto #fff;
 }
@@ -1682,4 +1675,97 @@ h2 {
 
 app-root{
   width:100vw;
+}
+
+.album-section{
+    align-items: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    min-height: 50vh;
+}
+
+.album-iframe{
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.web-subsect-col{
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  padding: 25px;
+}
+
+#full-wrap{
+  background-size: cover;
+  min-height: 100vh;
+}
+
+body, #full-wrap {
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+.sndClickLink{
+  background: #363a40;
+  border-radius: 15px;
+  padding: 2px 10px 2px 10px;
+}
+.sndClickLink:hover{
+  color:#aaa7bf;
+  background-color: #222;
+  text-decoration: none;
+}
+
+.logo-imgs{
+  width: 100px;
+  max-width: 100px;
+  height: auto;
+  pointer-events: none;
+  border-radius: 15px;
+}
+
+// @media only screen and (min-device-width: 768px) and (orientation: landscape){
+//   .logo-img-wrap {
+//     margin: 15px;
+//   }
+// }
+
+@media only screen and (max-device-width: 767px) {
+  .album-iframe{
+    width: 90%;
+  }
+}
+
+@media only screen and (max-device-width: 700px) {
+  .logo-img-wrap {
+    margin: 0;
+  }
+  .portfolio-client-list-wrap{
+    margin-top: 0;
+  }
+}
+
+
+
+@media only screen and (max-device-width: 250px) {
+  .portfolio-client-list-wrap {
+    flex-direction: column;
+  }
+}
+
+.active .logo-img-wrap{
+  background-color: #c2cedd !important;
 }

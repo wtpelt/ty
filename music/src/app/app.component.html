@@ -1,6 +1,7 @@
 <div id="full-wrap" [style.background-image]="getBgImg()" [style.background-position]="getBgPosition()">
 <app-header></app-header>
 <!-- The routed views render in the <router-outlet>-->
+<app-home *ngIf="isHomepage"></app-home>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
 </div>

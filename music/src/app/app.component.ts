@@ -12,6 +12,7 @@ export class AppComponent{
   public name: string;
   myUrl: any;
   bgImg: string;
+  isHomepage: boolean;
 
   constructor(private router: Router, private route: ActivatedRoute) {
 
@@ -29,7 +30,7 @@ export class AppComponent{
           else if (this.myUrl.url === "/music/album-one"){
             this.bgImg = 'albumOneBgImg'
           }
-          else if (this.myUrl.url === "/music/album-two"){
+          else if (this.myUrl.url === "/music/album-two" ){
             this.bgImg = 'albumTwoBgImg'
           }
           else if (this.myUrl.url === "/music/album-three"){
@@ -38,9 +39,16 @@ export class AppComponent{
           else if (this.myUrl.url === "/music/album-four"){
             this.bgImg = 'albumFourBgImg'
           }
+          else if (this.myUrl.url === "/"){
+            this.bgImg = 'homeBgImg'
+          }
           else {
             this.bgImg = ''
           }
+
+          if(this.myUrl.url === "/"){
+            this.isHomepage = true
+          } else {this.isHomepage = false;}
       });
  }
 
@@ -53,7 +61,7 @@ export class AppComponent{
     } else if (this.bgImg === 'albumTwoBgImg'){
       return 'url("./assets/ReGen-Ambient-Meditations-cover.jpg")';
     }
-    else if (this.bgImg === 'albumThreeBgImg'){
+    else if (this.bgImg === 'albumThreeBgImg' || this.bgImg === 'homeBgImg'){
       return 'url("./assets/Tylepathy-Remixes-One-With-Nature-Artwork.jpg")';
     }
     else if (this.bgImg === 'albumFourBgImg'){
@@ -65,7 +73,7 @@ export class AppComponent{
     if (this.bgImg === 'musicBgImgAll'){
       return 'right';
     }
-    else if (this.bgImg === 'albumOneBgImg'){
+    else if (this.bgImg === 'albumOneBgImg' || this.bgImg === 'homeBgImg'){
       return 'top';
     } else if (this.bgImg === 'albumTwoBgImg'){
       return 'bottom';

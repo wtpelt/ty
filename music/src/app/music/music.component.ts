@@ -5,7 +5,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-music',
   templateUrl: './music.component.html',
-  // styleUrls: ['./music.component.scss']
+  styleUrls: ['./music.component.scss']
 })
 export class MusicComponent {
 

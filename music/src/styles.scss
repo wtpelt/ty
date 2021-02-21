@@ -3,7 +3,7 @@ Custom Style
 */
 
 .album-iframe{
-  width: 700px;
+  width: 500px;
 }
 
 
@@ -215,11 +215,11 @@ label {
   cursor: zoom-in;
 }
 
-a,
-.navbar-brand,
-#btn-link1 {
-  cursor: crosshair;
-}
+// a,
+// .navbar-brand,
+// #btn-link1 {
+//   cursor: crosshair;
+// }
 
 /* Toggled State */
 
@@ -710,10 +710,6 @@ body {
   }
   #content {
     padding-top: 0;
-  }
-
-  .album-iframe{
-    width: 100%;
   }
 
   .web-subsect-col{
@@ -1720,9 +1716,8 @@ body, #full-wrap {
 
 .sndClickLink{
   border-radius: 15px;
-  width: 50%;
   background-color: #303030;
-  padding: 5px;
+  padding: 7px 20px 4px 20px;
   font-weight: 300;
 }
 .sndClickLink:hover{
@@ -1745,10 +1740,13 @@ body, #full-wrap {
 //   }
 // }
 
-@media only screen and (max-device-width: 767px) {
+@media only screen and (max-device-width: 767px) and (orientation: portrait) {
   .album-iframe{
     width: 90%;
   }
+  .web-subsect-col {
+    padding: 15px;
+}
 }
 
 // @media only screen and (max-device-width: 767px) and (orientation: portrait){
@@ -1779,18 +1777,12 @@ body, #full-wrap {
   background-color: #c2cedd !important;
 }
 
-
-// #full-wrap::before {
-//   z-index: -1;
-//   content: "";
-//   background-color: black;
-//   background-image: url("./assets/Tylepathy-Remixes-One-With-Nature-Artwork.jpg");
-//   background-size: cover;
-//   background-repeat: repeat;
-//   position: absolute;
-//   top: 0px;
-//   right: 0px;
-//   bottom: 0px;
-//   left: 0px;
-//   opacity: .3;
+// @media only screen and (max-device-width: 767px) {
+// #album-two{
+//   background-image: url("./assets/ReGen-Ambient-Meditations-Artwork-Small.jpg");
+//   width: 100px;
+//   height: 100px;
+//   background-size: contain;
+//   border-radius: 15px;
+// }
 // }

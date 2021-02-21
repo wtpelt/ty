@@ -14,9 +14,7 @@ export class AppComponent{
   bgImg: string;
   isHomepage: boolean;
 
-  constructor(private router: Router, private route: ActivatedRoute) {
-
-  }
+  constructor(private router: Router, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.router.events.pipe(
@@ -54,35 +52,36 @@ export class AppComponent{
 
   getBgImg(){
     if(this.bgImg === 'musicBgImgAll'){
-      return 'url("./assets/Dreamstep-Lovescape-Artwork.jpg")';
+      return 'url("./assets/Dreamstep-Lovescape-Artwork-Large-Cropped.jpg")';
     }
     else if (this.bgImg === 'albumOneBgImg'){
-      return 'url("./assets/Liquid-Bloom-ReGen-Deep-Ambient-Remixes-FINAL.jpg")';
+      return 'url("./assets/Liquid-Bloom-ReGen-Deep-Ambient-Remixes-Artwork-Large-Cropped.jpg")';
     } else if (this.bgImg === 'albumTwoBgImg'){
-      return 'url("./assets/ReGen-Ambient-Meditations-cover.jpg")';
+      return 'url("./assets/ReGen-Ambient-Meditations-Artwork-Large-Cropped.jpg")';
     }
     else if (this.bgImg === 'albumThreeBgImg' || this.bgImg === 'homeBgImg'){
-      return 'url("./assets/Tylepathy-Remixes-One-With-Nature-Artwork.jpg")';
+      return 'url("./assets/Tylepathy-Remixes-One-With-Nature-Artwork-Large-Cropped.jpg")';
     }
     else if (this.bgImg === 'albumFourBgImg'){
-      return 'url("./assets/Dreamstep-Lovescape-Artwork.jpg")';
+      return 'url("./assets/Dreamstep-Lovescape-Artwork-Large-Cropped.jpg")';
     }
   }
 
   getBgPosition(){
-    if (this.bgImg === 'musicBgImgAll'){
-      return 'right';
+    // if (this.bgImg === 'musicBgImgAll'){
+    //   return 'right';
+    // }
+    if (this.bgImg === 'albumOneBgImg' || this.bgImg === 'homeBgImg'){
+      return 'center';
     }
-    else if (this.bgImg === 'albumOneBgImg' || this.bgImg === 'homeBgImg'){
-      return 'top';
-    } else if (this.bgImg === 'albumTwoBgImg'){
-      return 'bottom';
+    else if (this.bgImg === 'albumTwoBgImg'){
+      return 'center';
     }
     else if (this.bgImg === 'albumThreeBgImg'){
       return 'center';
     }
     else if (this.bgImg === 'albumFourBgImg'){
-      return 'right';
+      return 'top';
     }
   }
 }

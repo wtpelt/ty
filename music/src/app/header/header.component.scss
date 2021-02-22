@@ -5,27 +5,17 @@
 }
 .site-logo-v2 {
   padding: 10px;
-  margin-left: 15px;
   border-radius: 5px;
 }
 .navbar{
   background-color: #353a40;
   opacity: .75;
 }
-// .bg-light {
-//   background-color: black !important;
-// }
-// .navbar-light .navbar-brand {
-//   color: rgba(255, 255, 255, 0.9);
-// }
-
 .navbar-nav a{
   font-weight: 400;
 }
-
-// .navbar-dark .navbar-nav .nav-link{
-//   color: rgba(255,255,255,.5);
-// }
-// .navbar-dark .navbar-nav .nav-link.active{
-//   color: white;
-// }
+@media only screen and (min-device-width: 893px){
+  .mobile-page-title{
+    display: none;
+  }
+}

@@ -455,7 +455,6 @@ p {
 }
 
 .logo-img-wrap {
-  margin: 15px;
   width: 120px;
   height: 120px;
   border-radius: 15px;
@@ -473,15 +472,12 @@ p {
   &:hover,
   :focus {
     filter: none;
-    box-shadow: inset 0.3px 0 1.65px 1px #9795ba;
+    // box-shadow: inset 0.3px 0 1.65px 1px #9795ba;
     transform: scale(1.05);
   }
   &:active{
-    box-shadow: inset 0.3px 0 1.65px 1px #9795ba;
+    // box-shadow: inset 0.3px 0 1.65px 1px #9795ba;
     transform: scale(0.95);
-  }
-  &:visited{
-    background-color: #c2cedd;
   }
 }
 
@@ -1194,8 +1190,7 @@ a {
 }
 @media (min-width: 768px) {
   .navbar-nav > li {
-    margin-top: 3px;
-    padding: 8px 2px;
+    padding-top: 5px;
   }
 }
 hr {
@@ -1624,9 +1619,9 @@ img::selection {
   padding: 5px;
 }
 @media only screen and (max-device-width: 767px) {
-  .web-sub-sect {
-    width: 94vw;
-  }
+  // .web-sub-sect {
+  //   width: 90%;
+  // }
 }
 
 @media only screen and (max-device-width: 767px) {
@@ -1734,27 +1729,20 @@ body, #full-wrap {
   border-radius: 15px;
 }
 
-// @media only screen and (min-device-width: 768px) and (orientation: landscape){
-//   .logo-img-wrap {
-//     margin: 15px;
-//   }
-// }
-
 @media only screen and (max-device-width: 767px) and (orientation: portrait) {
-  .album-iframe{
-    width: 90%;
-  }
   .web-subsect-col {
     padding: 15px;
 }
 }
 
-// @media only screen and (max-device-width: 767px) and (orientation: portrait){
-//   #full-wrap {
-//     background-size: 150%;
-//   }
-// }
-
+@media only screen and (max-device-width: 500px){
+  .album-iframe{
+    width: 90vw;
+  }
+  .web-sub-sect {
+    width: 100vw;
+  }
+}
 
 @media only screen and (max-device-width: 700px) {
   .logo-img-wrap {
@@ -1764,8 +1752,6 @@ body, #full-wrap {
     margin-top: 0;
   }
 }
-
-
 
 @media only screen and (max-device-width: 250px) {
   .portfolio-client-list-wrap {
@@ -1777,12 +1763,66 @@ body, #full-wrap {
   background-color: #c2cedd !important;
 }
 
-// @media only screen and (max-device-width: 767px) {
-// #album-two{
-//   background-image: url("./assets/ReGen-Ambient-Meditations-Artwork-Small.jpg");
-//   width: 100px;
-//   height: 100px;
-//   background-size: contain;
-//   border-radius: 15px;
-// }
-// }
+@media only screen and (max-device-width: 767px) and (orientation: landscape) {
+  .web-subsect-col {
+    padding: 15px;
+}
+.logo-imgs{
+  width: 100px;
+  max-width: 100px;
+}
+}
+
+@media only screen and (max-device-width: 600px) {
+.web-subsect-col {
+  padding: 15px;
+}
+.logo-imgs{
+  width: 80px;
+  max-width: 80x;
+}
+.logo-img-wrap {
+  width: 90px;
+  height: 90px;
+}
+}
+
+.album-player-img{
+    width: 500px;
+    height: 500px;
+    border: solid #303030 5px;
+    background: {
+      size: contain;
+      repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-device-width: 500px){
+  .album-player-img{
+    width: 90vw;
+    height:90vw;
+  }
+}
+
+
+.album-one-player-img{
+  background: {
+    image: url("./assets/Liquid-Bloom-ReGen-Deep-Ambient-Remixes-Artwork-Medium.jpg");
+  }
+}
+
+.album-two-player-img{
+  background: {
+  image: url("./assets/ReGen-Ambient-Meditations-Artwork-Medium.jpg");
+}
+}
+.album-three-player-img{
+  background: {
+  image: url("./assets/Tylepathy-Remixes-One-With-Nature-Artwork-Medium.jpg");
+}
+}
+.album-four-player-img{
+  background: {
+  image: url("./assets/Dreamstep-Lovescape-Artwork-Medium.jpg");
+}
+}

@@ -1826,3 +1826,29 @@ body, #full-wrap {
   image: url("./assets/Dreamstep-Lovescape-Artwork-Medium.jpg");
 }
 }
+
+.tylepathy-about-img{
+  background: {
+    image: url("./assets/tyler-oak-edit-v2-20210221_153131-cropped-smaller.jpg");
+  }
+}
+
+body {
+  will-change: transform;
+}
+
+.featured-title{
+  font-size: 1.5em;
+  font-weight: 400;
+  width: 500px;
+  background-color: #303030;
+  padding-top: 8px;
+  text-align: center;
+}
+
+@media only screen and (max-device-width: 500px){
+  .featured-title{
+    width: 90vw;
+  }
+
+}

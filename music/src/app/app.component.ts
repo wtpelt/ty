@@ -13,6 +13,7 @@ export class AppComponent{
   myUrl: any;
   bgImg: string;
   isHomepage: boolean;
+  isMainMusicPage: boolean;
 
   constructor(private router: Router, private route: ActivatedRoute) {}
 
@@ -46,7 +47,11 @@ export class AppComponent{
 
           if(this.myUrl.url === "/"){
             this.isHomepage = true
-          } else {this.isHomepage = false;}
+          } else {this.isHomepage = false}
+
+          if(this.myUrl.url === "/music"){
+            this.isMainMusicPage = true
+          } else {this.isMainMusicPage = false}
       });
  }
 

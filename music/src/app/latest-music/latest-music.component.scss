@@ -1,0 +1,22 @@
+.music-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.featured-release{
+  text-align: center;
+}
+.latest-release{
+  padding-bottom: 25px;
+}
+
+.social-section, .featured-release{
+  padding-top:25px;
+  padding-bottom: 25px;
+}
+
+.social-section{
+  display: flex;
+}

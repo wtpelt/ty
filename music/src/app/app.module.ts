@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { LatestMusicComponent } from './latest-music/latest-music.component';
 import { MusicComponent } from './music/music.component';
 
 @NgModule({
@@ -17,6 +18,7 @@ import { MusicComponent } from './music/music.component';
     MusicComponent,
     HeaderComponent,
     HomeComponent,
+    LatestMusicComponent,
     FooterComponent,
   ],
   imports: [

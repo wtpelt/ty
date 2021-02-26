@@ -6,14 +6,6 @@
   margin-top: 50px;
 }
 
-.homepage-title{
-  font-size: 1.5em;
-  font-weight: 400;
-  width: 500px;
-  background-color: #303030;
-  padding-top: 8px;
-}
-
 .featured-release{
   text-align: center;
 }
@@ -26,11 +18,3 @@
 .social-section{
   display: flex;
 }
-
-@media only screen and (max-device-width: 500px){
-  .homepage-title{
-    width: 90vw;
-  }
-
-}
-

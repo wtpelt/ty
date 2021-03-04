@@ -1,31 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Music</title>
-  <base href="https://tylepathy.com/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="https://tylepathy.com/favicon.ico">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Music</title>
+    <base href="https://tylepathy.com/"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-EK4E9EP8YC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<link rel="stylesheet" href="https://tylepathy.com/styles.29eb56c8159aa5b0cb13.css"></head>
-<body>
-  <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <script>
-    $(document).ready(function () {
+      gtag("config", "G-EK4E9EP8YC");
+    </script>
+  <link rel="stylesheet" href="styles.11b1e2b3561b6edbf467.css"></head>
+  <body>
+    <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script>
+      $(document).ready(function () {
         $(document).click(function (event) {
-            var click = $(event.target);
-            var _open = $(".navbar-collapse").hasClass("show");
-            if (_open === true && !click.hasClass("navbar-toggler")) {
-                $(".navbar-toggler").click();
-            }
+          var click = $(event.target);
+          var _open = $(".navbar-collapse").hasClass("show");
+          if (_open === true && !click.hasClass("navbar-toggler")) {
+            $(".navbar-toggler").click();
+          }
         });
-    });
+      });
     </script>
 
-  <app-root></app-root>
-<script src="https://tylepathy.com/runtime.7b63b9fd40098a2e8207.js" defer></script><script src="https://tylepathy.com/polyfills.d15628b9ba7248669cd9.js" defer></script><script src="https://tylepathy.com/main.671748bd468ffcc11293.js" defer></script></body>
+    <app-root></app-root>
+  <script src="runtime.7b63b9fd40098a2e8207.js" defer></script><script src="polyfills.d15628b9ba7248669cd9.js" defer></script><script src="main.671748bd468ffcc11293.js" defer></script></body>
 </html>

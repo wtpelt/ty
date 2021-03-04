@@ -2,10 +2,9 @@
 Custom Style
 */
 
-.album-iframe{
+.album-iframe {
   width: 500px;
 }
-
 
 .social-row-footer a {
   margin: 0 15px 0 15px;
@@ -475,7 +474,7 @@ p {
     // box-shadow: inset 0.3px 0 1.65px 1px #9795ba;
     transform: scale(1.05);
   }
-  &:active{
+  &:active {
     // box-shadow: inset 0.3px 0 1.65px 1px #9795ba;
     transform: scale(0.95);
   }
@@ -708,7 +707,7 @@ body {
     padding-top: 0;
   }
 
-  .web-subsect-col{
+  .web-subsect-col {
     width: 50%;
   }
 }
@@ -1533,24 +1532,6 @@ img::selection {
   text-align: center;
 }
 
-#btn-link1 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 50%;
-  margin-left: 50%;
-  transform: translate(-50%);
-  background-color: #000;
-  border-color: #aaa;
-  color: #fff;
-  transition: all 0.2s ease;
-  &:hover {
-    background-color: #111;
-    background-color: #11111180;
-    border-color: #aaa;
-  }
-}
-
 .site-logo-v2 {
   width: 50px;
   height: 50px;
@@ -1625,7 +1606,7 @@ img::selection {
 }
 
 @media only screen and (max-device-width: 767px) {
-  .portfolio-client-list-wrap{
+  .portfolio-client-list-wrap {
     flex-wrap: wrap;
   }
 }
@@ -1664,19 +1645,19 @@ h2 {
 //   display: none;
 // }
 
-app-root{
-  width:100vw;
+app-root {
+  width: 100vw;
 }
 
-.album-section{
-    align-items: center;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    min-height: 50vh;
+.album-section {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  min-height: 70vh;
 }
 
-.album-iframe{
+.album-iframe {
   animation-name: fade-in;
   animation-duration: 1s;
   animation-timing-function: ease-in;
@@ -1691,37 +1672,38 @@ app-root{
   }
 }
 
-.web-subsect-col{
+.web-subsect-col {
   animation-name: fade-in;
   animation-duration: 1s;
   animation-timing-function: ease-in;
   padding: 25px;
 }
 
-#full-wrap{
+#full-wrap {
   background-size: cover;
   min-height: 100vh;
 }
 
-body, #full-wrap {
+body,
+#full-wrap {
   animation-name: fade-in;
   animation-duration: 1s;
   animation-timing-function: ease-in;
 }
 
-.sndClickLink{
+.sndClickLink {
   border-radius: 15px;
   background-color: #303030;
   padding: 7px 20px 4px 20px;
   font-weight: 300;
 }
-.sndClickLink:hover{
-  color:#aaa7bf;
+.sndClickLink:hover {
+  color: #aaa7bf;
   background-color: #222;
   text-decoration: none;
 }
 
-.logo-imgs{
+.logo-imgs {
   width: 100px;
   max-width: 100px;
   height: auto;
@@ -1732,11 +1714,11 @@ body, #full-wrap {
 @media only screen and (max-device-width: 767px) and (orientation: portrait) {
   .web-subsect-col {
     padding: 15px;
-}
+  }
 }
 
-@media only screen and (max-device-width: 500px){
-  .album-iframe{
+@media only screen and (max-device-width: 500px) {
+  .album-iframe {
     width: 90vw;
   }
   .web-sub-sect {
@@ -1748,7 +1730,7 @@ body, #full-wrap {
   .logo-img-wrap {
     margin: 0;
   }
-  .portfolio-client-list-wrap{
+  .portfolio-client-list-wrap {
     margin-top: 0;
   }
 }
@@ -1759,78 +1741,78 @@ body, #full-wrap {
   }
 }
 
-.active .logo-img-wrap{
+.active .logo-img-wrap {
   background-color: #c2cedd !important;
 }
 
 @media only screen and (max-device-width: 767px) and (orientation: landscape) {
   .web-subsect-col {
     padding: 15px;
-}
-.logo-imgs{
-  width: 100px;
-  max-width: 100px;
-}
+  }
+  .logo-imgs {
+    width: 100px;
+    max-width: 100px;
+  }
 }
 
 @media only screen and (max-device-width: 600px) {
-.web-subsect-col {
-  padding: 15px;
-}
-.logo-imgs{
-  width: 80px;
-  max-width: 80x;
-}
-.logo-img-wrap {
-  width: 90px;
-  height: 90px;
-}
-}
-
-.album-player-img{
-    width: 500px;
-    height: 500px;
-    border: solid #303030 5px;
-    background: {
-      size: contain;
-      repeat: no-repeat;
-    }
+  .web-subsect-col {
+    padding: 15px;
+  }
+  .logo-imgs {
+    width: 80px;
+    max-width: 80x;
+  }
+  .logo-img-wrap {
+    width: 90px;
+    height: 90px;
+  }
 }
 
-@media only screen and (max-device-width: 500px){
-  .album-player-img{
+.album-player-img {
+  width: 500px;
+  height: 500px;
+  border: solid 5px;
+  border-color: black;
+  background: {
+    size: contain;
+    repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-device-width: 500px) {
+  .album-player-img {
     width: 90vw;
-    height:90vw;
+    height: 90vw;
   }
 }
 
-
-.album-one-player-img{
+.album-one-player-img {
   background: {
-    image: url("./assets/Liquid-Bloom-ReGen-Deep-Ambient-Remixes-Artwork-Medium.jpg");
+    image: url("./assets/album-one-artwork-medium.jpg");
+  }
+}
+.album-two-player-img {
+  background: {
+    image: url("./assets/album-two-artwork-medium.jpg");
+  }
+}
+.album-three-player-img {
+  background: {
+    image: url("./assets/album-three-artwork-medium.jpg");
+  }
+}
+.album-four-player-img {
+  background: {
+    image: url("./assets/album-four-artwork-medium.jpg");
   }
 }
 
-.album-two-player-img{
-  background: {
-  image: url("./assets/ReGen-Ambient-Meditations-Artwork-Medium.jpg");
-}
-}
-.album-three-player-img{
-  background: {
-  image: url("./assets/Tylepathy-Remixes-One-With-Nature-Artwork-Medium.jpg");
-}
-}
-.album-four-player-img{
-  background: {
-  image: url("./assets/Dreamstep-Lovescape-Artwork-Medium.jpg");
-}
-}
 
 // ABOUT
-.tylepathy-about-img{
+.tylepathy-about-img {
   background: {
-    image: url("./assets/tyler-oak-edit-v2-20210221_153131-cropped-smaller.jpg");
+    image: url("./assets/about-tylepathy.jpg");
   }
 }
 
@@ -1838,7 +1820,7 @@ body {
   will-change: transform;
 }
 
-.featured-title{
+.featured-title {
   font-size: 1.5em;
   font-weight: 400;
   width: 500px;
@@ -1847,9 +1829,8 @@ body {
   text-align: center;
 }
 
-@media only screen and (max-device-width: 500px){
-  .featured-title{
+@media only screen and (max-device-width: 500px) {
+  .featured-title {
     width: 90vw;
   }
-
 }

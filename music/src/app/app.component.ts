@@ -8,7 +8,7 @@ import {filter} from 'rxjs/operators';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent{
-  title = 'music';
+  title = 'home';
   public name: string;
   myUrl: any;
   bgImg: string;

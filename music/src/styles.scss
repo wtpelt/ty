@@ -1773,7 +1773,8 @@ body,
 .album-player-img {
   width: 500px;
   height: 500px;
-  border: solid 5px #303030;
+  border: solid 5px;
+  border-color: #303030;
   background: {
     size: contain;
     repeat: no-repeat;
@@ -1794,7 +1795,7 @@ body,
 @media only screen and (min-device-width: 768px) {
   .album-one-player-img {
     background: {
-      image: url("./assets/album-one-artwork-medium.jpg");
+      image: url("./assets/album-one-artwork-medium.png");
     }
   }
   .album-two-player-img {
@@ -1812,10 +1813,10 @@ body,
       image: url("./assets/album-four-artwork-medium.jpg");
     }
   }
-  // ---
+
   .logo-img-album-one {
     background: {
-      image: url("./assets/album-one-artwork-small.jpg");
+      image: url("./assets/album-one-artwork-small.png");
     }
   }
   .logo-img-album-two {
@@ -1833,10 +1834,10 @@ body,
       image: url("./assets/album-four-artwork-small.jpg");
     }
   }
-  // ---
+
   .album-one-bg-img {
     background: {
-      image: url("./assets/album-one-artwork-large-cropped.jpg");
+      image: url("./assets/album-one-artwork-large-cropped.png");
     }
   }
   .album-two-bg-img{
@@ -1859,7 +1860,7 @@ body,
 @media only screen and (max-device-width: 767px) {
   .album-one-player-img {
     background: {
-      image: url("./assets/album-one-artwork-small.jpg");
+      image: url("./assets/album-one-artwork-small.png");
     }
   }
   .album-two-player-img {
@@ -1880,7 +1881,7 @@ body,
 
   .logo-img-album-one {
     background: {
-      image: url("./assets/album-one-artwork-xs.jpg");
+      image: url("./assets/album-one-artwork-xs.png");
     }
   }
   .logo-img-album-two {
@@ -1901,7 +1902,7 @@ body,
 
   .album-one-bg-img {
     background: {
-      image: url("./assets/album-one-artwork-medium-cropped.jpg");
+      image: url("./assets/album-one-artwork-medium-cropped.png");
     }
   }
   .album-two-bg-img{

@@ -38,13 +38,16 @@ export class AppComponent{
           else if (this.myUrl.url === "/music/album-four"){
             this.bgImg = 'albumFourBgImg'
           }
+
           else if (this.myUrl.url === "/"){
             this.bgImg = 'homeBgImg'
+          }
+          else if (this.myUrl.url === "/about"){
+            this.bgImg = 'musicBgImgAll'
           }
           else {
             this.bgImg = ''
           }
-
           if(this.myUrl.url === "/"){
             this.isHomepage = true
           } else {this.isHomepage = false}
@@ -57,19 +60,19 @@ export class AppComponent{
 
   getBgImg(){
     if(this.bgImg === 'musicBgImgAll'){
-      return 'url("./assets/Dreamstep-Lovescape-Artwork-Large-Cropped.jpg")';
-    }
-    else if (this.bgImg === 'albumOneBgImg'){
-      return 'url("./assets/Liquid-Bloom-ReGen-Deep-Ambient-Remixes-Artwork-Large-Cropped.jpg")';
+      return 'music-bg-img-all';
+    } else if (this.bgImg === 'albumOneBgImg'){
+      return 'album-one-bg-img';
     } else if (this.bgImg === 'albumTwoBgImg'){
-      return 'url("./assets/ReGen-Ambient-Meditations-Artwork-Large-Cropped.jpg")';
+      return 'album-two-bg-img';
+    } else if (this.bgImg === 'albumThreeBgImg' || this.bgImg === 'homeBgImg'){
+      return 'album-three-bg-img';
+    } else if (this.bgImg === 'albumFourBgImg'){
+      return 'album-four-bg-img';
     }
-    else if (this.bgImg === 'albumThreeBgImg' || this.bgImg === 'homeBgImg'){
-      return 'url("./assets/Tylepathy-Remixes-One-With-Nature-Artwork-Large-Cropped.jpg")';
-    }
-    else if (this.bgImg === 'albumFourBgImg'){
-      return 'url("./assets/Dreamstep-Lovescape-Artwork-Large-Cropped.jpg")';
-    }
+    // else if (this.bgImg === 'aboutBgImg'){
+    //   return 'url("./assets/oak-tree-large.jpg")';
+    // }
   }
 
   getBgPosition(){
@@ -78,14 +81,11 @@ export class AppComponent{
     // }
     if (this.bgImg === 'albumOneBgImg' || this.bgImg === 'homeBgImg'){
       return 'center';
-    }
-    else if (this.bgImg === 'albumTwoBgImg'){
+    } else if (this.bgImg === 'albumTwoBgImg'){
       return 'center';
-    }
-    else if (this.bgImg === 'albumThreeBgImg'){
+    } else if (this.bgImg === 'albumThreeBgImg'){
       return 'center';
-    }
-    else if (this.bgImg === 'albumFourBgImg'){
+    } else if (this.bgImg === 'albumFourBgImg'){
       return 'top';
     }
   }

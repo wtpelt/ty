@@ -1706,7 +1706,7 @@ body,
 .logo-imgs {
   width: 100px;
   max-width: 100px;
-  height: auto;
+  height: 100px;
   pointer-events: none;
   border-radius: 15px;
 }
@@ -1761,7 +1761,8 @@ body,
   }
   .logo-imgs {
     width: 80px;
-    max-width: 80x;
+    max-width: 80px;
+    height: 80px;
   }
   .logo-img-wrap {
     width: 90px;
@@ -1772,8 +1773,7 @@ body,
 .album-player-img {
   width: 500px;
   height: 500px;
-  border: solid 5px;
-  border-color: black;
+  border: solid 5px #303030;
   background: {
     size: contain;
     repeat: no-repeat;
@@ -1787,24 +1787,137 @@ body,
   }
 }
 
-.album-one-player-img {
-  background: {
-    image: url("./assets/album-one-artwork-medium.jpg");
+.logo-imgs {
+  background-size: contain;
+}
+
+@media only screen and (min-device-width: 768px) {
+  .album-one-player-img {
+    background: {
+      image: url("./assets/album-one-artwork-medium.jpg");
+    }
+  }
+  .album-two-player-img {
+    background: {
+      image: url("./assets/album-two-artwork-medium.jpg");
+    }
+  }
+  .album-three-player-img {
+    background: {
+      image: url("./assets/album-three-artwork-medium.jpg");
+    }
+  }
+  .album-four-player-img {
+    background: {
+      image: url("./assets/album-four-artwork-medium.jpg");
+    }
+  }
+  // ---
+  .logo-img-album-one {
+    background: {
+      image: url("./assets/album-one-artwork-small.jpg");
+    }
+  }
+  .logo-img-album-two {
+    background: {
+      image: url("./assets/album-two-artwork-small.jpg");
+    }
+  }
+  .logo-img-album-three {
+    background: {
+      image: url("./assets/album-three-artwork-small.jpg");
+    }
+  }
+  .logo-img-album-four {
+    background: {
+      image: url("./assets/album-four-artwork-small.jpg");
+    }
+  }
+  // ---
+  .album-one-bg-img {
+    background: {
+      image: url("./assets/album-one-artwork-large-cropped.jpg");
+    }
+  }
+  .album-two-bg-img{
+    background: {
+      image: url("./assets/album-two-artwork-large-cropped.jpg");
+    }
+  }
+  .album-three-bg-img{
+    background: {
+      image: url("./assets/album-three-artwork-large-cropped.jpg");
+    }
+  }
+  .album-four-bg-img, .music-bg-img-all{
+    background: {
+      image: url("./assets/album-four-artwork-large-cropped.jpg");
+    }
   }
 }
-.album-two-player-img {
-  background: {
-    image: url("./assets/album-two-artwork-medium.jpg");
+
+@media only screen and (max-device-width: 767px) {
+  .album-one-player-img {
+    background: {
+      image: url("./assets/album-one-artwork-small.jpg");
+    }
   }
-}
-.album-three-player-img {
-  background: {
-    image: url("./assets/album-three-artwork-medium.jpg");
+  .album-two-player-img {
+    background: {
+      image: url("./assets/album-two-artwork-small.jpg");
+    }
   }
-}
-.album-four-player-img {
-  background: {
-    image: url("./assets/album-four-artwork-medium.jpg");
+  .album-three-player-img {
+    background: {
+      image: url("./assets/album-three-artwork-small.jpg");
+    }
+  }
+  .album-four-player-img {
+    background: {
+      image: url("./assets/album-four-artwork-small.jpg");
+    }
+  }
+
+  .logo-img-album-one {
+    background: {
+      image: url("./assets/album-one-artwork-xs.jpg");
+    }
+  }
+  .logo-img-album-two {
+    background: {
+      image: url("./assets/album-two-artwork-xs.jpg");
+    }
+  }
+  .logo-img-album-three {
+    background: {
+      image: url("./assets/album-three-artwork-xs.jpg");
+    }
+  }
+  .logo-img-album-four {
+    background: {
+      image: url("./assets/album-four-artwork-xs.jpg");
+    }
+  }
+
+  .album-one-bg-img {
+    background: {
+      image: url("./assets/album-one-artwork-medium-cropped.jpg");
+    }
+  }
+  .album-two-bg-img{
+    background: {
+      image: url("./assets/album-two-artwork-medium-cropped.jpg");
+    }
+  }
+  .album-three-bg-img{
+    background: {
+      image: url("./assets/album-three-artwork-medium-cropped.jpg");
+    }
+  }
+  .album-four-bg-img, .music-bg-img-all{
+    background: {
+      image: url("./assets/album-four-artwork-medium-cropped.jpg");
+    }
   }
 }
 
@@ -1812,7 +1925,7 @@ body,
 // ABOUT
 .tylepathy-about-img {
   background: {
-    image: url("./assets/about-tylepathy.jpg");
+    image: url("./assets/about-tylepathy-two.jpg");
   }
 }
 

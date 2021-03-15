@@ -1855,6 +1855,13 @@ body,
       image: url("./assets/album-four-artwork-large-cropped.jpg");
     }
   }
+
+  // ABOUT
+.tylepathy-about-img {
+  background: {
+    image: url("./assets/about-tylepathy-two.jpg");
+  }
+}
 }
 
 @media only screen and (max-width: 767px) {
@@ -1920,15 +1927,16 @@ body,
       image: url("./assets/album-four-artwork-medium-cropped.jpg");
     }
   }
-}
-
-
-// ABOUT
+  // ABOUT
 .tylepathy-about-img {
   background: {
-    image: url("./assets/about-tylepathy-two.jpg");
+    image: url("./assets/about-tylepathy-two-small.jpg");
   }
 }
+}
+
+
+
 
 body {
   will-change: transform;

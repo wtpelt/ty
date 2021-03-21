@@ -452,8 +452,7 @@ p {
 }
 
 .logo-img-wrap {
-  width: 120px;
-  height: 120px;
+  border: 5px solid #353a40;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -463,7 +462,6 @@ p {
   // filter: grayscale(100%);
   pointer-events: auto;
   transition: all 0.1s ease-out;
-  background-color: #353a40;
   // box-shadow: inset 0.3px 0 1.65px 0.1px #000, inset -0.3px 0 6.5px 0.1px #000;
   &:hover,
   :focus {
@@ -1485,6 +1483,7 @@ img::selection {
 
 .social-icons {
   width: 30px;
+  height:30px;
   &:hover {
     opacity: 0.7;
   }
@@ -1951,9 +1950,6 @@ body,
   }
 }
 }
-
-
-
 
 body {
   will-change: transform;

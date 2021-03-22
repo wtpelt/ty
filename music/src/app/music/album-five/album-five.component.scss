@@ -6,7 +6,11 @@ border: none;
 .sndClickLink{
   background-color: #5b233f;
   border:none;
+  padding:0;
+  display: block;
 }
+
+
 
 @media only screen and (max-width: 767px) {
   .album-player-img{
@@ -17,4 +21,7 @@ border: none;
 .featured-title {
   background-color: #5b233f;
   border: solid 2px white;
+}
+.featured-title:hover{
+  border-color: #3b6590;
 }

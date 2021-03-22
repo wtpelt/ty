@@ -38,6 +38,9 @@ export class AppComponent{
           else if (this.myUrl.url === "/music/album-four"){
             this.bgImg = 'albumFourBgImg'
           }
+          else if (this.myUrl.url === "/music/album-five"){
+            this.bgImg = 'albumFiveBgImg'
+          }
 
           else if (this.myUrl.url === "/"){
             this.bgImg = 'homeBgImg'
@@ -69,6 +72,8 @@ export class AppComponent{
       return 'album-three-bg-img';
     } else if (this.bgImg === 'albumFourBgImg'){
       return 'album-four-bg-img';
+    } else if (this.bgImg === 'albumFiveBgImg'){
+      return 'album-five-bg-img';
     }
     // else if (this.bgImg === 'aboutBgImg'){
     //   return 'url("./assets/oak-tree-large.jpg")';
@@ -87,6 +92,8 @@ export class AppComponent{
       return 'center';
     } else if (this.bgImg === 'albumFourBgImg'){
       return 'top';
+    } else if (this.bgImg === 'albumFiveBgImg'){
+      return 'bottom';
     }
   }
 }

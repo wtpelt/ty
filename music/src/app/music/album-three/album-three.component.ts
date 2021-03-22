@@ -4,7 +4,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-album-three',
   templateUrl: './album-three.component.html',
-  // styleUrls: ['./music.component.scss']
+  styleUrls: ['./album-three.component.scss']
 })
 export class AlbumThreeComponent {
   constructor(private router: Router, private route: ActivatedRoute) {}

@@ -1483,7 +1483,7 @@ img::selection {
 
 .social-icons {
   width: 30px;
-  height:30px;
+  height:auto;
   &:hover {
     opacity: 0.7;
   }
@@ -1689,9 +1689,10 @@ body,
 }
 
 .sndClickLink {
+  border: solid 2px white;
   background-color: #303030;
   padding: 7px 15px 4px 15px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .sndClickLink:hover {
   color: #aaa7bf;
@@ -1833,7 +1834,7 @@ body,
 
   .album-five-player-img {
     background: {
-      image: url("./assets/album-four-artwork-medium.jpg");
+      image: url("./assets/album-five-coming-soon-full-medium.jpg");
     }
   }
 
@@ -1859,7 +1860,7 @@ body,
   }
   .logo-img-album-five {
     background: {
-      image: url("./assets/album-four-artwork-small.jpg");
+      image: url("./assets/album-five-coming-soon-small.jpg");
     }
   }
 
@@ -1919,7 +1920,7 @@ body,
   }
   .album-five-bg-img{
     background: {
-      image: url("./assets/album-four-artwork-large-cropped.jpg");
+      image: url("./assets/album-five-coming-soon-full-cropped-large.jpg");
     }
   }
   // ABOUT
@@ -1953,7 +1954,7 @@ body,
   }
   .album-five-player-img {
     background: {
-      image: url("./assets/album-four-artwork-small.jpg");
+      image: url("./assets/album-five-coming-soon-full-small.jpg");
     }
   }
   .logo-img-album-one {
@@ -1978,7 +1979,7 @@ body,
   }
   .logo-img-album-five {
     background: {
-      image: url("./assets/album-four-artwork-xs.jpg");
+      image: url("./assets/album-five-coming-soon-xs.jpg");
     }
   }
 
@@ -2032,7 +2033,7 @@ body,
   }
   .album-five-bg-img{
     background: {
-      image: url("./assets/album-four-artwork-medium-cropped.jpg");
+      image: url("./assets/album-five-coming-soon-full-cropped-medium.jpg");
     }
   }
   // ABOUT
@@ -2060,4 +2061,8 @@ body {
   .featured-title {
     width: 90vw;
   }
+}
+
+.logo-img-wrap.active{
+  border-color: whitesmoke;
 }

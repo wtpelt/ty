@@ -865,13 +865,6 @@ body {
     font-size: 0.6em;
     margin-bottom: 20px;
   }
-  .logo-imgs {
-    transform: scale(0.8);
-  }
-  .logo-img-wrap {
-    width: 125px;
-    height: 125px;
-  }
 }
 @media only screen and (max-width: 149px) {
   #header-websites {
@@ -1752,10 +1745,6 @@ body,
     max-width: 80px;
     height: 80px;
   }
-  .logo-img-wrap {
-    width: 90px;
-    height: 90px;
-  }
 }
 
 .album-player-img {
@@ -1834,7 +1823,7 @@ body,
 
   .album-five-player-img {
     background: {
-      image: url("./assets/album-five-coming-soon-full-medium.jpg");
+      image: url("./assets/album-five-artwork-medium.jpg");
     }
   }
 
@@ -1860,7 +1849,7 @@ body,
   }
   .logo-img-album-five {
     background: {
-      image: url("./assets/album-five-coming-soon-small.jpg");
+      image: url("./assets/album-five-artwork-small.jpg");
     }
   }
 
@@ -1913,14 +1902,14 @@ body,
       image: url("./assets/album-three-artwork-large-cropped.jpg");
     }
   }
-  .album-four-bg-img, .music-bg-img-all{
+  .album-four-bg-img{
     background: {
       image: url("./assets/album-four-artwork-large-cropped.jpg");
     }
   }
-  .album-five-bg-img{
+  .album-five-bg-img, .music-bg-img-all{
     background: {
-      image: url("./assets/album-five-coming-soon-full-cropped-large.jpg");
+      image: url("./assets/album-five-artwork-large-cropped.jpg");
     }
   }
   // ABOUT
@@ -1954,7 +1943,7 @@ body,
   }
   .album-five-player-img {
     background: {
-      image: url("./assets/album-five-coming-soon-full-small.jpg");
+      image: url("./assets/album-five-artwork-small.jpg");
     }
   }
   .logo-img-album-one {
@@ -1979,7 +1968,7 @@ body,
   }
   .logo-img-album-five {
     background: {
-      image: url("./assets/album-five-coming-soon-xs.jpg");
+      image: url("./assets/album-five-artwork-xs.jpg");
     }
   }
 
@@ -2026,14 +2015,14 @@ body,
       image: url("./assets/album-three-artwork-medium-cropped.jpg");
     }
   }
-  .album-four-bg-img, .music-bg-img-all{
+  .album-four-bg-img{
     background: {
       image: url("./assets/album-four-artwork-medium-cropped.jpg");
     }
   }
-  .album-five-bg-img{
+  .album-five-bg-img, .music-bg-img-all{
     background: {
-      image: url("./assets/album-five-coming-soon-full-cropped-medium.jpg");
+      image: url("./assets/album-five-artwork-medium-cropped.jpg");
     }
   }
   // ABOUT

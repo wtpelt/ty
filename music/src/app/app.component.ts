@@ -46,7 +46,7 @@ export class AppComponent{
             this.bgImg = 'homeBgImg'
           }
           else if (this.myUrl.url === "/about"){
-            this.bgImg = 'musicBgImgAll'
+            this.bgImg = 'aboutBgImgAll'
           }
           else {
             this.bgImg = ''
@@ -70,7 +70,7 @@ export class AppComponent{
       return 'album-two-bg-img';
     } else if (this.bgImg === 'albumThreeBgImg' || this.bgImg === 'homeBgImg'){
       return 'album-three-bg-img';
-    } else if (this.bgImg === 'albumFourBgImg'){
+    } else if (this.bgImg === 'albumFourBgImg' || this.bgImg === 'aboutBgImgAll'){
       return 'album-four-bg-img';
     } else if (this.bgImg === 'albumFiveBgImg'){
       return 'album-five-bg-img';
@@ -90,10 +90,10 @@ export class AppComponent{
       return 'center';
     } else if (this.bgImg === 'albumThreeBgImg'){
       return 'center';
-    } else if (this.bgImg === 'albumFourBgImg'){
+    } else if (this.bgImg === 'albumFourBgImg' || this.bgImg === 'aboutBgImgAll'){
       return 'top';
-    } else if (this.bgImg === 'albumFiveBgImg'){
-      return 'bottom';
+    } else if (this.bgImg === 'albumFiveBgImg' || this.bgImg === 'musicBgImgAll'){
+      return 'center';
     }
   }
 }

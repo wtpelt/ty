@@ -1,13 +1,13 @@
-import { Component, } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
-import {filter} from 'rxjs/operators';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
-export class AppComponent{
+export class AppComponent {
   title = 'home';
   public name: string;
   myUrl: any;
@@ -18,82 +18,91 @@ export class AppComponent{
   constructor(private router: Router, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.router.events.pipe(
-      filter(event => event instanceof NavigationEnd)
-  )
-      .subscribe(event => {
-          this.myUrl = event;
-          if(this.myUrl.url === "/music"){
-            this.bgImg = 'musicBgImgAll'
-          }
-          else if (this.myUrl.url === "/music/album-one"){
-            this.bgImg = 'albumOneBgImg'
-          }
-          else if (this.myUrl.url === "/music/album-two" ){
-            this.bgImg = 'albumTwoBgImg'
-          }
-          else if (this.myUrl.url === "/music/album-three"){
-            this.bgImg = 'albumThreeBgImg'
-          }
-          else if (this.myUrl.url === "/music/album-four"){
-            this.bgImg = 'albumFourBgImg'
-          }
-          else if (this.myUrl.url === "/music/album-five"){
-            this.bgImg = 'albumFiveBgImg'
-          }
+    this.router.events
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe((event) => {
+        this.myUrl = event;
 
-          else if (this.myUrl.url === "/"){
-            this.bgImg = 'homeBgImg'
-          }
-          else if (this.myUrl.url === "/about"){
-            this.bgImg = 'aboutBgImgAll'
-          }
-          else {
-            this.bgImg = ''
-          }
-          if(this.myUrl.url === "/"){
-            this.isHomepage = true
-          } else {this.isHomepage = false}
+        switch (this.myUrl.url) {
+          case '/music':
+            this.bgImg = 'musicBgImgAll';
+            break;
+          case '/music/album-one':
+            this.bgImg = 'albumOneBgImg';
+            break;
+          case '/music/album-two':
+            this.bgImg = 'albumTwoBgImg';
+            break;
+          case '/music/album-three':
+            this.bgImg = 'albumThreeBgImg';
+            break;
+          case '/music/album-four':
+            this.bgImg = 'albumFourBgImg';
+            break;
+          case '/music/album-five':
+            this.bgImg = 'albumFiveBgImg';
+            break;
+          case '/':
+            this.bgImg = 'homeBgImg';
+            break;
+          case '/about':
+            this.bgImg = 'aboutBgImgAll';
+            break;
+        }
 
-          if(this.myUrl.url === "/music"){
-            this.isMainMusicPage = true
-          } else {this.isMainMusicPage = false}
+        if (this.myUrl.url === '/') {
+          this.isHomepage = true;
+        } else {
+          this.isHomepage = false;
+        }
+
+        if (this.myUrl.url === '/music') {
+          this.isMainMusicPage = true;
+        } else {
+          this.isMainMusicPage = false;
+        }
       });
- }
-
-  getBgImg(){
-    if(this.bgImg === 'musicBgImgAll'){
-      return 'music-bg-img-all';
-    } else if (this.bgImg === 'albumOneBgImg'){
-      return 'album-one-bg-img';
-    } else if (this.bgImg === 'albumTwoBgImg'){
-      return 'album-two-bg-img';
-    } else if (this.bgImg === 'albumThreeBgImg' || this.bgImg === 'homeBgImg'){
-      return 'album-three-bg-img';
-    } else if (this.bgImg === 'albumFourBgImg' || this.bgImg === 'aboutBgImgAll'){
-      return 'album-four-bg-img';
-    } else if (this.bgImg === 'albumFiveBgImg'){
-      return 'album-five-bg-img';
-    }
-    // else if (this.bgImg === 'aboutBgImg'){
-    //   return 'url("./assets/oak-tree-large.jpg")';
-    // }
   }
 
-  getBgPosition(){
-    // if (this.bgImg === 'musicBgImgAll'){
-    //   return 'right';
-    // }
-    if (this.bgImg === 'albumOneBgImg' || this.bgImg === 'homeBgImg'){
-      return 'center';
-    } else if (this.bgImg === 'albumTwoBgImg'){
-      return 'center';
-    } else if (this.bgImg === 'albumThreeBgImg'){
-      return 'center';
-    } else if (this.bgImg === 'albumFourBgImg' || this.bgImg === 'aboutBgImgAll'){
-      return 'top';
-    } else if (this.bgImg === 'albumFiveBgImg' || this.bgImg === 'musicBgImgAll'){
-      return 'center';
+  getBgImg() {
+    switch (this.bgImg) {
+      case 'musicBgImgAll':
+        return 'music-bg-img-all';
+      case 'albumOneBgImg':
+        return 'album-one-bg-img';
+      case 'albumTwoBgImg':
+        return 'album-two-bg-img';
+      case 'albumThreeBgImg':
+        return 'album-three-bg-img';
+      case 'homeBgImg':
+        return 'album-three-bg-img';
+      case 'albumFourBgImg':
+        return 'album-four-bg-img';
+      case 'aboutBgImgAll':
+        return 'album-four-bg-img';
+      case 'albumFiveBgImg':
+        return 'album-five-bg-img';
+    }
+  }
+
+  getBgPosition() {
+    switch (this.bgImg) {
+      case 'musicBgImgAll':
+        return 'center';
+      case 'albumOneBgImg':
+        return 'center';
+      case 'albumTwoBgImg':
+        return 'center';
+      case 'albumThreeBgImg':
+        return 'center';
+      case 'homeBgImg':
+        return 'center';
+      case 'albumFourBgImg':
+        return 'top';
+      case 'aboutBgImgAll':
+        return 'top';
+      case 'albumFiveBgImg':
+        return 'center';
     }
   }
 }

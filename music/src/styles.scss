@@ -1820,10 +1820,14 @@ body,
       image: url("./assets/album-four-artwork-medium.jpg");
     }
   }
-
   .album-five-player-img {
     background: {
       image: url("./assets/album-five-artwork-medium.jpg");
+    }
+  }
+  .album-six-player-img {
+    background: {
+      image: url("./assets/album-six-artwork-medium.jpg");
     }
   }
 
@@ -1850,6 +1854,11 @@ body,
   .logo-img-album-five {
     background: {
       image: url("./assets/album-five-artwork-small.jpg");
+    }
+  }
+  .logo-img-album-six {
+    background: {
+      image: url("./assets/album-six-artwork-small.jpg");
     }
   }
 
@@ -1907,9 +1916,14 @@ body,
       image: url("./assets/album-four-artwork-large-cropped.jpg");
     }
   }
-  .album-five-bg-img, .music-bg-img-all{
+  .album-five-bg-img{
     background: {
       image: url("./assets/album-five-artwork-large-cropped.jpg");
+    }
+  }
+  .album-six-bg-img, .music-bg-img-all{
+    background: {
+      image: url("./assets/album-six-artwork-large-cropped.jpg");
     }
   }
   // ABOUT
@@ -1946,6 +1960,11 @@ body,
       image: url("./assets/album-five-artwork-small.jpg");
     }
   }
+  .album-six-player-img {
+    background: {
+      image: url("./assets/album-six-artwork-small.jpg");
+    }
+  }
   .logo-img-album-one {
     background: {
       image: url("./assets/album-one-artwork-xs.jpg");
@@ -1969,6 +1988,11 @@ body,
   .logo-img-album-five {
     background: {
       image: url("./assets/album-five-artwork-xs.jpg");
+    }
+  }
+  .logo-img-album-six {
+    background: {
+      image: url("./assets/album-six-artwork-xs.jpg");
     }
   }
 
@@ -2020,9 +2044,14 @@ body,
       image: url("./assets/album-four-artwork-medium-cropped.jpg");
     }
   }
-  .album-five-bg-img, .music-bg-img-all{
+  .album-five-bg-img{
     background: {
       image: url("./assets/album-five-artwork-medium-cropped.jpg");
+    }
+  }
+  .album-six-bg-img, .music-bg-img-all{
+    background: {
+      image: url("./assets/album-six-artwork-medium-cropped.jpg");
     }
   }
   // ABOUT

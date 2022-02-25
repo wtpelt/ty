@@ -42,6 +42,9 @@ export class AppComponent {
           case '/music/album-five':
             this.bgImg = 'albumFiveBgImg';
             break;
+          case '/music/album-six':
+            this.bgImg = 'albumSixBgImg';
+            break;
           case '/':
             this.bgImg = 'homeBgImg';
             break;
@@ -68,13 +71,14 @@ export class AppComponent {
     switch (this.bgImg) {
       case 'musicBgImgAll':
         return 'music-bg-img-all';
+      // Featured Release
+      case 'homeBgImg':
+        return 'album-six-bg-img';
       case 'albumOneBgImg':
         return 'album-one-bg-img';
       case 'albumTwoBgImg':
         return 'album-two-bg-img';
       case 'albumThreeBgImg':
-        return 'album-three-bg-img';
-      case 'homeBgImg':
         return 'album-three-bg-img';
       case 'albumFourBgImg':
         return 'album-four-bg-img';
@@ -82,6 +86,9 @@ export class AppComponent {
         return 'album-four-bg-img';
       case 'albumFiveBgImg':
         return 'album-five-bg-img';
+      case 'albumSixBgImg':
+        return 'album-six-bg-img';
+
     }
   }
 
@@ -103,6 +110,8 @@ export class AppComponent {
         return 'top';
       case 'albumFiveBgImg':
         return 'center';
+        case 'albumSixBgImg':
+          return 'top';
     }
   }
 }

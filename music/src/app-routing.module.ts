@@ -4,6 +4,7 @@ import { AboutComponent } from './app/about/about.component';
 import { AlbumFiveComponent } from './app/music/album-five/album-five.component';
 import { AlbumFourComponent } from './app/music/album-four/album-four.component';
 import { AlbumOneComponent } from './app/music/album-one/album-one.component';
+import { AlbumSixComponent } from './app/music/album-six/album-six.component';
 import { AlbumThreeComponent } from './app/music/album-three/album-three.component';
 import { AlbumTwoComponent } from './app/music/album-two/album-two.component';
 import { MusicComponent } from './app/music/music.component';
@@ -30,6 +31,10 @@ const routes: Routes = [
     {
       path: 'album-five',
       component: AlbumFiveComponent , // another child route component that the router renders
+    },
+    {
+      path: 'album-six',
+      component: AlbumSixComponent , // another child route component that the router renders
     },
   ],
 },

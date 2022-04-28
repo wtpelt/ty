@@ -8,5 +8,5 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class AlbumSevenComponent {
   constructor(private router: Router, private route: ActivatedRoute) {}
-  title = 'Afar (Tylepathy Remixes)';
+  title = 'Lily Pad Lullaby Symphony';
 }

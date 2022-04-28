@@ -45,11 +45,14 @@ export class AppComponent {
           case '/music/album-six':
             this.bgImg = 'albumSixBgImg';
             break;
+          case '/music/album-seven':
+            this.bgImg = 'albumSevenBgImg';
+            break;  
           case '/':
             this.bgImg = 'homeBgImg';
             break;
           case '/about':
-            this.bgImg = 'aboutBgImgAll';
+            this.bgImg = 'albumSixBgImg';
             break;
         }
 
@@ -88,14 +91,15 @@ export class AppComponent {
         return 'album-five-bg-img';
       case 'albumSixBgImg':
         return 'album-six-bg-img';
-
+      case 'albumSevenBgImg':
+        return 'album-seven-bg-img';
     }
   }
 
   getBgPosition() {
     switch (this.bgImg) {
       case 'musicBgImgAll':
-        return 'center';
+        return 'bottom';
       case 'albumOneBgImg':
         return 'center';
       case 'albumTwoBgImg':
@@ -110,8 +114,10 @@ export class AppComponent {
         return 'top';
       case 'albumFiveBgImg':
         return 'center';
-        case 'albumSixBgImg':
-          return 'top';
+      case 'albumSixBgImg':
+        return 'top';
+      case 'albumSevenBgImg':
+        return 'bottom';
     }
   }
 }

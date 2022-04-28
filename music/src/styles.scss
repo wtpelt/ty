@@ -1831,6 +1831,13 @@ body,
     }
   }
 
+  .album-seven-player-img {
+    background: {
+      image: url("./assets/album-seven-artwork-medium.jpg");
+    }
+  }
+
+
   .logo-img-album-one {
     background: {
       image: url("./assets/album-one-artwork-small.jpg");
@@ -1861,6 +1868,12 @@ body,
       image: url("./assets/album-six-artwork-small.jpg");
     }
   }
+  .logo-img-album-seven {
+    background: {
+      image: url("./assets/album-seven-artwork-small.jpg");
+    }
+  }
+
 
 // webp
 // .album-one-bg-img {
@@ -1926,10 +1939,15 @@ body,
       image: url("./assets/album-six-artwork-large-cropped.jpg");
     }
   }
+  .album-seven-bg-img{
+    background: {
+      image: url("./assets/album-seven-artwork-large-cropped.jpg");
+    }
+  }
   // ABOUT
 .tylepathy-about-img {
   background: {
-    image: url("./assets/about-tylepathy-two.jpg");
+    image: url("./assets/about-tylepathy-v3-large.jpg");
   }
 }
 }
@@ -1937,32 +1955,37 @@ body,
 @media only screen and (max-width: 767px) {
   .album-one-player-img {
     background: {
-      image: url("./assets/album-one-artwork-small.jpg");
+      image: url("./assets/album-one-artwork-medium.jpg");
     }
   }
   .album-two-player-img {
     background: {
-      image: url("./assets/album-two-artwork-small.jpg");
+      image: url("./assets/album-two-artwork-medium.jpg");
     }
   }
   .album-three-player-img {
     background: {
-      image: url("./assets/album-three-artwork-small.jpg");
+      image: url("./assets/album-three-artwork-medium.jpg");
     }
   }
   .album-four-player-img {
     background: {
-      image: url("./assets/album-four-artwork-small.jpg");
+      image: url("./assets/album-four-artwork-medium.jpg");
     }
   }
   .album-five-player-img {
     background: {
-      image: url("./assets/album-five-artwork-small.jpg");
+      image: url("./assets/album-five-artwork-medium.jpg");
     }
   }
   .album-six-player-img {
     background: {
-      image: url("./assets/album-six-artwork-small.jpg");
+      image: url("./assets/album-six-artwork-medium.jpg");
+    }
+  }
+  .album-seven-player-img {
+    background: {
+      image: url("./assets/album-seven-artwork-medium.jpg");
     }
   }
   .logo-img-album-one {
@@ -1993,6 +2016,11 @@ body,
   .logo-img-album-six {
     background: {
       image: url("./assets/album-six-artwork-xs.jpg");
+    }
+  }
+  .logo-img-album-seven {
+    background: {
+      image: url("./assets/album-seven-artwork-xs.jpg");
     }
   }
 
@@ -2054,10 +2082,15 @@ body,
       image: url("./assets/album-six-artwork-medium-cropped.jpg");
     }
   }
+  .album-seven-bg-img{
+    background: {
+      image: url("./assets/album-seven-artwork-medium-cropped.jpg");
+    }
+  }
   // ABOUT
 .tylepathy-about-img {
   background: {
-    image: url("./assets/about-tylepathy-two-small.jpg");
+    image: url("./assets/about-tylepathy-v3-small.jpg");
   }
 }
 }

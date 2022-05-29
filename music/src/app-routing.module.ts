@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router'; // CLI imports router
 import { AboutComponent } from './app/about/about.component';
+import { AlbumEightComponent } from './app/music/album-eight/album-eight.component';
 import { AlbumFiveComponent } from './app/music/album-five/album-five.component';
 import { AlbumFourComponent } from './app/music/album-four/album-four.component';
 import { AlbumOneComponent } from './app/music/album-one/album-one.component';
@@ -40,6 +41,10 @@ const routes: Routes = [
     {
       path: 'album-seven',
       component: AlbumSevenComponent , // another child route component that the router renders
+    },
+    {
+      path: 'album-eight',
+      component: AlbumEightComponent , // another child route component that the router renders
     },
   ],
 },

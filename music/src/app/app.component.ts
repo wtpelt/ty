@@ -25,7 +25,7 @@ export class AppComponent {
 
         switch (this.myUrl.url) {
           case '/music':
-            this.bgImg = 'musicBgImgAll';
+            this.bgImg = 'albumEightBgImg';
             break;
           case '/music/album-one':
             this.bgImg = 'albumOneBgImg';
@@ -47,7 +47,10 @@ export class AppComponent {
             break;
           case '/music/album-seven':
             this.bgImg = 'albumSevenBgImg';
-            break;  
+            break;
+          case '/music/album-eight':
+            this.bgImg = 'albumEightBgImg';
+            break;
           case '/':
             this.bgImg = 'homeBgImg';
             break;
@@ -93,6 +96,8 @@ export class AppComponent {
         return 'album-six-bg-img';
       case 'albumSevenBgImg':
         return 'album-seven-bg-img';
+        case 'albumEightBgImg':
+          return 'album-eight-bg-img';
     }
   }
 
@@ -118,6 +123,8 @@ export class AppComponent {
         return 'top';
       case 'albumSevenBgImg':
         return 'bottom';
+        case 'albumEightBgImg':
+          return 'top';
     }
   }
 }

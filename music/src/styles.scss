@@ -1259,6 +1259,7 @@ a {
   justify-content: center;
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
 }
 
 input[type="checkbox"]:checked ~ .portfolio-client-list-wrap {
@@ -1830,10 +1831,14 @@ body,
       image: url("./assets/album-six-artwork-medium.jpg");
     }
   }
-
   .album-seven-player-img {
     background: {
       image: url("./assets/album-seven-artwork-medium.jpg");
+    }
+  }
+  .album-eight-player-img {
+    background: {
+      image: url("./assets/album-eight-artwork-medium.jpg");
     }
   }
 
@@ -1871,6 +1876,11 @@ body,
   .logo-img-album-seven {
     background: {
       image: url("./assets/album-seven-artwork-small.jpg");
+    }
+  }
+  .logo-img-album-eight {
+    background: {
+      image: url("./assets/album-eight-artwork-small.jpg");
     }
   }
 
@@ -1944,6 +1954,11 @@ body,
       image: url("./assets/album-seven-artwork-large-cropped.jpg");
     }
   }
+  .album-eight-bg-img{
+    background: {
+      image: url("./assets/album-eight-artwork-large-cropped.jpg");
+    }
+  }
   // ABOUT
 .tylepathy-about-img {
   background: {
@@ -1988,6 +2003,11 @@ body,
       image: url("./assets/album-seven-artwork-medium.jpg");
     }
   }
+  .album-eight-player-img {
+    background: {
+      image: url("./assets/album-eight-artwork-medium.jpg");
+    }
+  }
   .logo-img-album-one {
     background: {
       image: url("./assets/album-one-artwork-xs.jpg");
@@ -2021,6 +2041,11 @@ body,
   .logo-img-album-seven {
     background: {
       image: url("./assets/album-seven-artwork-xs.jpg");
+    }
+  }
+  .logo-img-album-eight {
+    background: {
+      image: url("./assets/album-eight-artwork-xs.jpg");
     }
   }
 
@@ -2087,6 +2112,11 @@ body,
       image: url("./assets/album-seven-artwork-medium-cropped.jpg");
     }
   }
+  .album-eight-bg-img{
+    background: {
+      image: url("./assets/album-eight-artwork-medium-cropped.jpg");
+    }
+  }
   // ABOUT
 .tylepathy-about-img {
   background: {
@@ -2104,8 +2134,11 @@ body {
   font-weight: 400;
   width: 500px;
   background-color: #303030;
-  padding-top: 8px;
-  text-align: center;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 5px;
 }
 
 @media only screen and (max-width: 500px) {

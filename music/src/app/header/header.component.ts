@@ -42,6 +42,9 @@ export class HeaderComponent {
           else if(this.myUrl.url === "/music/album-seven"){
             this.title = 'Music'
           }
+          else if(this.myUrl.url === "/music/album-eight"){
+            this.title = 'Music'
+          }
           else if (this.myUrl.url === "/about"){
             this.title = 'About'
           }

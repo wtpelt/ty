@@ -527,6 +527,7 @@ body {
 .logo-img-wrap {
   -webkit-column-break-inside: avoid;
   break-inside: avoid-column;
+  border-radius: 5px;
 }
 .portfolio-client-list-wrap {
   column-count: 1;
@@ -1652,6 +1653,8 @@ app-root {
   animation-name: fade-in;
   animation-duration: 1s;
   animation-timing-function: ease-in;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 @keyframes fade-in {
@@ -1687,11 +1690,13 @@ body,
   background-color: #303030;
   padding: 7px 15px 4px 15px;
   font-weight: 400;
+  border-radius: 10px;
+  font-size: 1.1em;
+  color: #c8c8c8;
 }
 .sndClickLink:hover {
   color: #aaa7bf;
   background-color: #222;
-  text-decoration: none;
 }
 
 .logo-imgs {
@@ -2117,6 +2122,11 @@ body,
       image: url("./assets/album-eight-artwork-medium-cropped.jpg");
     }
   }
+
+  #tracklist li .tracknum, #tracklist li .tracktitle, #tracklist li .currenttime, #tracklist li .tracktime{
+    font-size: 14px !important;
+  }
+
   // ABOUT
 .tylepathy-about-img {
   background: {
@@ -2139,6 +2149,8 @@ body {
   align-items: center;
   display: flex;
   padding-top: 5px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -2165,4 +2177,16 @@ body {
   .album-video-iframe {
     width: 90vw;
   }
+}
+
+.light-color-link:hover{
+  color:#f1edd5
+}
+
+.navbar{
+  padding: 0.5rem 1rem;
+}
+
+.album-video-div iframe{
+  border-radius: 15px;
 }

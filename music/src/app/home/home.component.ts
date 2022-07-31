@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   title = 'home';
-  showSection = true;
+  showSection = false;
 }

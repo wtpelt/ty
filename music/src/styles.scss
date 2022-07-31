@@ -528,6 +528,7 @@ body {
   -webkit-column-break-inside: avoid;
   break-inside: avoid-column;
   border-radius: 5px;
+  box-shadow: 6px 8px 14px #000;
 }
 .portfolio-client-list-wrap {
   column-count: 1;
@@ -1655,6 +1656,7 @@ app-root {
   animation-timing-function: ease-in;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  box-shadow: 5px 10px 8px #000;
 }
 
 @keyframes fade-in {
@@ -1693,6 +1695,7 @@ body,
   border-radius: 10px;
   font-size: 1.1em;
   color: #c8c8c8;
+  box-shadow: 5px 10px 8px #000;
 }
 .sndClickLink:hover {
   color: #aaa7bf;
@@ -1762,6 +1765,7 @@ body,
     size: contain;
     repeat: no-repeat;
   }
+  box-shadow: 5px 10px 8px #000;
 }
 
 @media only screen and (max-width: 500px) {
@@ -2189,4 +2193,9 @@ body {
 
 .album-video-div iframe{
   border-radius: 15px;
+  box-shadow: 5px 10px 8px #000;
+}
+
+.album-video-div iframe .theme-dark #nonartarea {
+  background-color: #011a2e;
 }

@@ -25,31 +25,37 @@ export class AppComponent {
 
         switch (this.myUrl.url) {
           case '/music':
-            this.bgImg = 'albumEightBgImg';
+            this.bgImg = 'albumTenBgImg';
             break;
-          case '/music/album-one':
+          case '/music/regen-deep-ambient-remixes':
             this.bgImg = 'albumOneBgImg';
             break;
-          case '/music/album-two':
+          case '/music/regen-ambient-meditations':
             this.bgImg = 'albumTwoBgImg';
             break;
-          case '/music/album-three':
+          case '/music/tylepathy-remixes-one-with-nature':
             this.bgImg = 'albumThreeBgImg';
             break;
-          case '/music/album-four':
+          case '/music/dreamstep-lovescape':
             this.bgImg = 'albumFourBgImg';
             break;
-          case '/music/album-five':
+          case '/music/one-giant-consciousness':
             this.bgImg = 'albumFiveBgImg';
             break;
-          case '/music/album-six':
+          case '/music/afar-tylepathy-remixes':
             this.bgImg = 'albumSixBgImg';
             break;
-          case '/music/album-seven':
+          case '/music/lilypad-lullaby-symphony':
             this.bgImg = 'albumSevenBgImg';
             break;
-          case '/music/album-eight':
+          case '/music/breath-portal-to-stillness':
             this.bgImg = 'albumEightBgImg';
+            break;
+          case '/music/the-mycelium-is-remixed':
+            this.bgImg = 'albumNineBgImg';
+            break;
+          case '/music/dreamstep-lovescape-suspended-reverb-mix':
+            this.bgImg = 'albumTenBgImg';
             break;
           case '/':
             this.bgImg = 'homeBgImg';
@@ -79,7 +85,7 @@ export class AppComponent {
         return 'music-bg-img-all';
       // Featured Release
       case 'homeBgImg':
-        return 'album-six-bg-img';
+        return 'album-nine-bg-img';
       case 'albumOneBgImg':
         return 'album-one-bg-img';
       case 'albumTwoBgImg':
@@ -98,6 +104,10 @@ export class AppComponent {
         return 'album-seven-bg-img';
         case 'albumEightBgImg':
           return 'album-eight-bg-img';
+        case 'albumNineBgImg':
+          return 'album-nine-bg-img';
+        case 'albumTenBgImg':
+          return 'album-ten-bg-img';
     }
   }
 

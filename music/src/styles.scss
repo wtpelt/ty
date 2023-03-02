@@ -1850,6 +1850,16 @@ body,
       image: url("./assets/album-eight-artwork-medium.jpg");
     }
   }
+  .album-nine-player-img {
+    background: {
+      image: url("./assets/album-nine-artwork-medium.jpg");
+    }
+  }
+  .album-ten-player-img {
+    background: {
+      image: url("./assets/album-ten-artwork-medium.jpg");
+    }
+  }
 
 
   .logo-img-album-one {
@@ -1890,6 +1900,16 @@ body,
   .logo-img-album-eight {
     background: {
       image: url("./assets/album-eight-artwork-small.jpg");
+    }
+  }
+  .logo-img-album-nine {
+    background: {
+      image: url("./assets/album-nine-artwork-small.jpg");
+    }
+  }
+  .logo-img-album-ten {
+    background: {
+      image: url("./assets/album-ten-artwork-small.jpg");
     }
   }
 
@@ -1968,6 +1988,16 @@ body,
       image: url("./assets/album-eight-artwork-large-cropped.jpg");
     }
   }
+  .album-nine-bg-img{
+    background: {
+      image: url("./assets/album-nine-artwork-large-cropped.jpg");
+    }
+  }
+  .album-ten-bg-img{
+    background: {
+      image: url("./assets/album-ten-artwork-large-cropped.jpg");
+    }
+  }
   // ABOUT
 .tylepathy-about-img {
   background: {
@@ -2017,6 +2047,16 @@ body,
       image: url("./assets/album-eight-artwork-medium.jpg");
     }
   }
+  .album-nine-player-img {
+    background: {
+      image: url("./assets/album-nine-artwork-medium.jpg");
+    }
+  }
+  .album-ten-player-img {
+    background: {
+      image: url("./assets/album-ten-artwork-medium.jpg");
+    }
+  }
   .logo-img-album-one {
     background: {
       image: url("./assets/album-one-artwork-xs.jpg");
@@ -2057,6 +2097,17 @@ body,
       image: url("./assets/album-eight-artwork-xs.jpg");
     }
   }
+  .logo-img-album-nine {
+    background: {
+      image: url("./assets/album-nine-artwork-xs.jpg");
+    }
+  }
+  .logo-img-album-ten {
+    background: {
+      image: url("./assets/album-ten-artwork-xs.jpg");
+    }
+  }
+
 
 // webp
   // .album-one-bg-img {
@@ -2126,10 +2177,20 @@ body,
       image: url("./assets/album-eight-artwork-medium-cropped.jpg");
     }
   }
-
-  #tracklist li .tracknum, #tracklist li .tracktitle, #tracklist li .currenttime, #tracklist li .tracktime{
-    font-size: 14px !important;
+  .album-nine-bg-img{
+    background: {
+      image: url("./assets/album-nine-artwork-medium-cropped.jpg");
+    }
   }
+  .album-ten-bg-img{
+    background: {
+      image: url("./assets/album-ten-artwork-medium-cropped.jpg");
+    }
+  }
+
+#tracklist li .tracknum, #tracklist li .tracktitle, #tracklist li .currenttime, #tracklist li .tracktime{
+    font-size: 14px !important;
+}
 
   // ABOUT
 .tylepathy-about-img {

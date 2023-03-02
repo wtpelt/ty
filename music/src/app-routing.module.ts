@@ -41,7 +41,7 @@ const routes: Routes = [
       component: AlbumSixComponent , // another child route component that the router renders
     },
     {
-      path: 'lilypad-lullaby-symphony',
+      path: 'lily-pad-lullaby-symphony',
       component: AlbumSevenComponent , // another child route component that the router renders
     },
     {

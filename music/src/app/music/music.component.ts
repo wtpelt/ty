@@ -14,7 +14,7 @@ export class MusicComponent {
   albumFour = "/music/dreamstep-lovescape";
   albumFive = "/music/one-giant-consciousness";
   albumSix = "/music/afar-tylepathy-remixes";
-  albumSeven = "/music/lilypad-lullaby-symphony";
+  albumSeven = "/music/lily-pad-lullaby-symphony";
   albumEight = "/music/breath-portal-to-stillness";
   albumNine = "/music/the-mycelium-is-remixed";
   albumTen = "/music/dreamstep-lovescape-suspended-reverb-mix";

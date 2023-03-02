@@ -45,7 +45,7 @@ export class AppComponent {
           case '/music/afar-tylepathy-remixes':
             this.bgImg = 'albumSixBgImg';
             break;
-          case '/music/lilypad-lullaby-symphony':
+          case '/music/lily-pad-lullaby-symphony':
             this.bgImg = 'albumSevenBgImg';
             break;
           case '/music/breath-portal-to-stillness':

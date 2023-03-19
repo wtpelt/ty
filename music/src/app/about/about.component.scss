@@ -32,6 +32,7 @@
   padding-top: 25px;
   max-width: 1000px;
   font-weight: 400;
+  font-size: larger;
   padding: 25px;
   background-color: #06243bdb;
   box-shadow: 5px 5px 8px #000;
@@ -40,6 +41,7 @@
 @media only screen and (min-width: 628px){
   .about-write-up{
     border-radius: 15px;
+    text-transform: none;
   }
 }
 

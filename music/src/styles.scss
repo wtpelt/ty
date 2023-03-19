@@ -1689,13 +1689,14 @@ body,
 
 .sndClickLink {
   border: solid 1px #d6d6eb;
-  background-color: #303030;
+  background-color: #000000cc;
   padding: 7px 15px 4px 15px;
   font-weight: 400;
   border-radius: 10px;
   font-size: 1.1em;
   color: #c8c8c8;
   box-shadow: 5px 10px 8px #000;
+  text-decoration: none;
 }
 .sndClickLink:hover {
   color: #aaa7bf;
@@ -2206,7 +2207,7 @@ body {
 
 .featured-title {
   font-size: 1.3em;
-  font-weight: 400;
+  font-weight: 900;
   width: 500px;
   background-color: #303030;
   height: 35px;
@@ -2216,6 +2217,8 @@ body {
   padding-top: 5px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
+  // background: linear-gradient(to top, #000000d9 0%, #15152033 75%);
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 500px) {
@@ -2259,4 +2262,10 @@ body {
 
 .album-video-div iframe .theme-dark #nonartarea {
   background-color: #011a2e;
+}
+
+body{
+  font-family: 'Gruppo', cursive;
+  text-transform: uppercase;
+  letter-spacing: .5px;
 }

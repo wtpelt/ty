@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { otherPlatformsButtonText } from 'src/app/shared/button-label';
 
 @Component({
   selector: 'app-album-five',
@@ -9,4 +10,5 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class AlbumFiveComponent {
   constructor(private router: Router, private route: ActivatedRoute) {}
   title = 'Dreamstep Lovescape';
+  otherPlatformsButtonText = otherPlatformsButtonText;
 }

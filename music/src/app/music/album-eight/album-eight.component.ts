@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { otherPlatformsButtonText } from 'src/app/shared/button-label';
 
 @Component({
   selector: 'app-album-eight',
@@ -9,4 +10,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class AlbumEightComponent {
   constructor(private router: Router, private route: ActivatedRoute) {}
   title = 'Breath: Portal to Stillness';
+  otherPlatformsButtonText = otherPlatformsButtonText;
+
 }

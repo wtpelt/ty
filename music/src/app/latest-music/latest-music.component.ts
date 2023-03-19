@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { otherPlatformsButtonText } from '../shared/button-label';
 
 @Component({
   selector: 'app-latest-music',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class LatestMusicComponent {
   title = 'home';
+  otherPlatformsButtonText = otherPlatformsButtonText;
+
 }

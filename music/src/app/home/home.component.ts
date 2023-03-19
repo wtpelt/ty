@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { otherPlatformsButtonText } from '../shared/button-label';
 
 @Component({
   selector: 'app-home',
@@ -8,4 +9,6 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   title = 'home';
   showSection = false;
+  otherPlatformsButtonText = otherPlatformsButtonText;
 }
+

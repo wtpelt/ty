@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { otherPlatformsButtonText } from '../shared/button-label';
 
 
 @Component({
@@ -22,5 +23,6 @@ export class MusicComponent {
   constructor(private router: Router, private route: ActivatedRoute) {}
 
   title = 'music';
+  otherPlatformsButtonText = otherPlatformsButtonText;
 
 }

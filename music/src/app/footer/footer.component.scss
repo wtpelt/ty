@@ -6,7 +6,7 @@ footer {
 }
 .footer-copyright {
   margin: {
-    top: 50px;
+    // top: 50px;
   }
   text-align: center;
   font-size: 14px;
@@ -23,4 +23,9 @@ footer {
 
 .copyright-row{
   font-weight: 400;
+}
+
+footer{
+  background-color: #000000cc !important;
+  // background:linear-gradient(267deg, #40412d00 10%, #000000d9 50%, #336d9000 90%);
 }

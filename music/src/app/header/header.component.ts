@@ -20,6 +20,8 @@ export class HeaderComponent {
   albumEight = "/music/breath-portal-to-stillness";
   albumNine = "/music/the-mycelium-is-remixed";
   albumTen = "/music/dreamstep-lovescape-suspended-reverb-mix";
+  albumEleven = "/music/fragrance-regenerated";
+
 
 
   constructor(private router: Router, private route: ActivatedRoute) {}
@@ -41,7 +43,9 @@ export class HeaderComponent {
             this.albumSeven ||
             this.albumEight ||
             this.albumNine ||
-            this.albumTen
+            this.albumTen ||
+            this.albumEleven
+
           ) {
             this.title = 'Music';
           } else if (this.myUrl.url === '/about') {

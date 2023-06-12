@@ -1673,6 +1673,11 @@ app-root {
   animation-duration: 1s;
   animation-timing-function: ease-in;
   padding: 5px;
+  filter: grayscale(0.5);
+}
+
+.web-subsect-col:hover {
+  filter: grayscale(0);
 }
 
 #full-wrap {
@@ -1861,7 +1866,11 @@ body,
       image: url("./assets/album-ten-artwork-medium.jpg");
     }
   }
-
+  .album-eleven-player-img {
+    background: {
+      image: url("./assets/album-eleven-artwork-medium.jpg");
+    }
+  }
 
   .logo-img-album-one {
     background: {
@@ -1911,6 +1920,11 @@ body,
   .logo-img-album-ten {
     background: {
       image: url("./assets/album-ten-artwork-small.jpg");
+    }
+  }
+  .logo-img-album-eleven {
+    background: {
+      image: url("./assets/album-eleven-artwork-small.jpg");
     }
   }
 
@@ -1999,6 +2013,12 @@ body,
       image: url("./assets/album-ten-artwork-large-cropped.jpg");
     }
   }
+  .album-eleven-bg-img{
+    background: {
+      image: url("./assets/album-eleven-artwork-large-cropped.jpg");
+    }
+  }
+
   // ABOUT
 .tylepathy-about-img {
   background: {
@@ -2058,6 +2078,11 @@ body,
       image: url("./assets/album-ten-artwork-medium.jpg");
     }
   }
+  .album-eleven-player-img {
+    background: {
+      image: url("./assets/album-eleven-artwork-medium.jpg");
+    }
+  }
   .logo-img-album-one {
     background: {
       image: url("./assets/album-one-artwork-xs.jpg");
@@ -2106,6 +2131,11 @@ body,
   .logo-img-album-ten {
     background: {
       image: url("./assets/album-ten-artwork-xs.jpg");
+    }
+  }
+  .logo-img-album-eleven {
+    background: {
+      image: url("./assets/album-eleven-artwork-xs.jpg");
     }
   }
 
@@ -2186,6 +2216,11 @@ body,
   .album-ten-bg-img{
     background: {
       image: url("./assets/album-ten-artwork-medium-cropped.jpg");
+    }
+  }
+  .album-eleven-bg-img{
+    background: {
+      image: url("./assets/album-eleven-artwork-medium-cropped.jpg");
     }
   }
 

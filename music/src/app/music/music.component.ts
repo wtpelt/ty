@@ -19,6 +19,7 @@ export class MusicComponent {
   albumEight = "/music/breath-portal-to-stillness";
   albumNine = "/music/the-mycelium-is-remixed";
   albumTen = "/music/dreamstep-lovescape-suspended-reverb-mix";
+  albumEleven = "/music/fragrance-regenerated";
 
   constructor(private router: Router, private route: ActivatedRoute) {}
 

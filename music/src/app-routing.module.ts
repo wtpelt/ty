@@ -12,6 +12,7 @@ import { AlbumTenComponent } from './app/music/album-ten/album-ten.component';
 import { AlbumThreeComponent } from './app/music/album-three/album-three.component';
 import { AlbumTwoComponent } from './app/music/album-two/album-two.component';
 import { MusicComponent } from './app/music/music.component';
+import { AlbumElevenComponent } from './app/music/album-eleven/album-eleven.component';
 
 const routes: Routes = [
   { path: 'music', component: MusicComponent ,
@@ -56,7 +57,10 @@ const routes: Routes = [
       path: 'dreamstep-lovescape-suspended-reverb-mix',
       component: AlbumTenComponent , // another child route component that the router renders
     },
-
+    {
+      path: 'fragrance-regenerated',
+      component: AlbumElevenComponent , // another child route component that the router renders
+    },
   ],
 },
   { path: 'about', component: AboutComponent },

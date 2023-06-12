@@ -25,7 +25,7 @@ export class AppComponent {
 
         switch (this.myUrl.url) {
           case '/music':
-            this.bgImg = 'albumTenBgImg';
+            this.bgImg = 'albumElevenBgImg';
             break;
           case '/music/regen-deep-ambient-remixes':
             this.bgImg = 'albumOneBgImg';
@@ -57,6 +57,9 @@ export class AppComponent {
           case '/music/dreamstep-lovescape-suspended-reverb-mix':
             this.bgImg = 'albumTenBgImg';
             break;
+            case '/music/fragrance-regenerated':
+              this.bgImg = 'albumElevenBgImg';
+              break;
           case '/':
             this.bgImg = 'homeBgImg';
             break;
@@ -85,7 +88,7 @@ export class AppComponent {
         return 'music-bg-img-all';
       // Featured Release
       case 'homeBgImg':
-        return 'album-nine-bg-img';
+        return 'album-eight-bg-img';
       case 'albumOneBgImg':
         return 'album-one-bg-img';
       case 'albumTwoBgImg':
@@ -108,6 +111,8 @@ export class AppComponent {
           return 'album-nine-bg-img';
         case 'albumTenBgImg':
           return 'album-ten-bg-img';
+        case 'albumElevenBgImg':
+          return 'album-eleven-bg-img';
     }
   }
 

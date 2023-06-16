@@ -26,6 +26,9 @@
     width: 90vw;
     height:90vw;
   }
+  .about-page{
+    padding: 20px;
+  }
 }
 
 .about-write-up{
@@ -38,17 +41,28 @@
   box-shadow: 5px 5px 8px #000;
 }
 
+.about-para{
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-indent: 0;
+}
+
+.about-para:first-of-type{
+  padding-top: 0;
+}
+
+.about-para:last-of-type{
+  padding-bottom: 0;
+}
+
 @media only screen and (min-width: 628px){
   .about-write-up{
     border-radius: 15px;
     text-transform: none;
   }
-}
-
-.about-para{
-  padding-top: 5px;
-  padding-bottom: 5px;
-  text-indent: 50px;
+  .about-para{
+    text-indent: 50px;
+  }
 }
 
 .featured-title {

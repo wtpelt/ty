@@ -1774,10 +1774,17 @@ body,
   box-shadow: 5px 10px 8px #000;
 }
 
+.spotify-tylepathy-preview{
+  width: 100%;
+}
+
 @media only screen and (max-width: 500px) {
   .album-player-img {
     width: 90vw;
     height: 90vw;
+  }
+  .spotify-tylepathy-preview{
+    width: 90vw;
   }
 }
 

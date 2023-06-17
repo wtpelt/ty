@@ -144,6 +144,5 @@
     "@schematics/angular:component": {
       "styleext": "scss"
     }
-  },
-  "defaultProject": "music"
+  }
 }

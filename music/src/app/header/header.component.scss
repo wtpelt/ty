@@ -1,15 +1,9 @@
-.header-b {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .site-logo-v2 {
   padding: 10px;
   border-radius: 5px;
 }
 .navbar{
   background-color: #212529db !important;
-  // opacity: .9;
 }
 .navbar-nav a{
   font-weight: 400;
@@ -20,21 +14,10 @@
   text-decoration: none !important;
 }
 
-
-
 // Break point for mobile menu
-@media only screen and (min-width: 893px){
-  .mobile-page-title{
-    display: none;
-  }
-
-}
-
-// Break point for mobile menu
-@media only screen and (max-width: 991px){
+@media only screen and (max-width: 575px){
   .navbar-nav .nav-link{
     text-align: center;
-    // color: #303030;
     border: solid 2px;
     padding: 10px;
   }
@@ -44,39 +27,17 @@
     .navbar-nav .nav-item:nth-of-type(1){
       padding-top: 10px;
       }
-  // .navbar-nav .nav-link.active{
-  //   color: #ffffff;
-  // }
-
-  // .navbar-nav .nav-item:nth-of-type(1){
-  //   background-color: #779fc9;
-  // }
-  // .navbar-nav .nav-item:nth-of-type(2){
-  //   background-color: #93d8bf;
-  // }
-  // .navbar-nav .nav-item:nth-of-type(3){
-  //   background-color: #a67bcb;
-  // }
-}
-
-.mobile-page-title{
-  font-weight: 400;
-  font-size: 1.5em;
 }
 
 .navbar{
   background-color: #000000cc !important;
-  // background: linear-gradient(168deg, #000000c2 49%, #e3deda00 49%) !important;
   font-family: 'Gloria Hallelujah', cursive;
   font-family: 'WindSong', cursive;
   font-family: 'Gloria Hallelujah', cursive;
   font-family: 'Rubik Iso', cursive;
-  // font-family: 'WindSong', cursive;
   font-family: 'Gloria Hallelujah', cursive;
-font-family: 'Gruppo', cursive;
-
+  font-family: 'Gruppo', cursive;
 }
-
 
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link{
   font-weight: 900;

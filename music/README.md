@@ -1,4 +1,4 @@
-# Music Website
+# Official Music Website for Tylepathy
 
 This is a music website developed with Angular. It showcases different music albums featuring the artist/producer Tylepathy. The website was created by and is maintained by William Tyler Pelt of Digital Metta LLC.
 

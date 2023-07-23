@@ -5,11 +5,10 @@ import { otherPlatformsButtonText } from 'src/app/shared/button-label';
 @Component({
   selector: 'app-album-eight',
   templateUrl: './album-eight.component.html',
-  styleUrls: ['./album-eight.component.scss']
+  styleUrls: ['./album-eight.component.scss'],
 })
 export class AlbumEightComponent {
-  constructor(private router: Router, private route: ActivatedRoute) {}
+  constructor() {}
   title = 'Breath: Portal to Stillness';
   otherPlatformsButtonText = otherPlatformsButtonText;
-
 }

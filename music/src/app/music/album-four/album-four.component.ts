@@ -5,12 +5,10 @@ import { otherPlatformsButtonText } from 'src/app/shared/button-label';
 @Component({
   selector: 'app-album-four',
   templateUrl: './album-four.component.html',
-  styleUrls: ['./album-four.component.scss']
+  styleUrls: ['./album-four.component.scss'],
 })
 export class AlbumFourComponent {
-  constructor(private router: Router, private route: ActivatedRoute) {}
+  constructor() {}
   title = 'Dreamstep Lovescape';
   otherPlatformsButtonText = otherPlatformsButtonText;
-
 }
-

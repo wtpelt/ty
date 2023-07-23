@@ -7,8 +7,7 @@ import { otherPlatformsButtonText } from 'src/app/shared/button-label';
   templateUrl: './album-two.component.html',
 })
 export class AlbumTwoComponent {
-  constructor(private router: Router, private route: ActivatedRoute) {}
+  constructor() {}
   title = 'ReGen: Ambient Meditations';
   otherPlatformsButtonText = otherPlatformsButtonText;
-
 }

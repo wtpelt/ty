@@ -2,6 +2,12 @@ import { Component } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
+// Interface to define the structure of an image configuration
+interface ImageConfig {
+  imgClass: string;
+  position: string;
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,136 +16,99 @@ import { filter } from 'rxjs/operators';
 export class AppComponent {
   title = 'home';
   public name: string;
-  myUrl: any;
   bgImg: string;
+  bgPosition: string;
   isHomepage: boolean;
   isMainMusicPage: boolean;
+  defaultPosition: string = 'center';
+  // whatever image you want to feature for the homepage
+  homeBgImg: string = 'album-eight-bg-img';
+
+  // Object to store image configuration against respective keys
+  private imageConfig: { [key: string]: ImageConfig } = {
+    musicBgImgAll: {
+      imgClass: 'music-all-bg-img',
+      position: this.defaultPosition,
+    },
+    albumOneBgImg: {
+      imgClass: 'album-one-bg-img',
+      position: this.defaultPosition,
+    },
+    albumTwoBgImg: {
+      imgClass: 'album-two-bg-img',
+      position: this.defaultPosition,
+    },
+    albumThreeBgImg: {
+      imgClass: 'album-three-bg-img',
+      position: this.defaultPosition,
+    },
+    albumFourBgImg: {
+      imgClass: 'album-four-bg-img',
+      position: 'top',
+    },
+    albumFiveBgImg: {
+      imgClass: 'album-five-bg-img',
+      position: this.defaultPosition,
+    },
+    albumSixBgImg: {
+      imgClass: 'album-six-bg-img',
+      position: 'top',
+    },
+    albumSevenBgImg: {
+      imgClass: 'album-seven-bg-img',
+      position: 'bottom',
+    },
+    albumEightBgImg: {
+      imgClass: 'album-eight-bg-img',
+      position: 'top',
+    },
+    albumNineBgImg: {
+      imgClass: 'album-nine-bg-img',
+      position: this.defaultPosition,
+    },
+    albumTenBgImg: {
+      imgClass: 'album-ten-bg-img',
+      position: this.defaultPosition,
+    },
+    albumElevenBgImg: {
+      imgClass: 'album-eleven-bg-img',
+      position: this.defaultPosition,
+    },
+    homeBgImg: {
+      imgClass: this.homeBgImg,
+      position: this.defaultPosition,
+    },
+  };
 
   constructor(private router: Router, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
-      .subscribe((event) => {
-        this.myUrl = event;
-
-        switch (this.myUrl.url) {
-          case '/music':
-            this.bgImg = 'albumElevenBgImg';
-            break;
-          case '/music/regen-deep-ambient-remixes':
-            this.bgImg = 'albumOneBgImg';
-            break;
-          case '/music/regen-ambient-meditations':
-            this.bgImg = 'albumTwoBgImg';
-            break;
-          case '/music/tylepathy-remixes-one-with-nature':
-            this.bgImg = 'albumThreeBgImg';
-            break;
-          case '/music/dreamstep-lovescape':
-            this.bgImg = 'albumFourBgImg';
-            break;
-          case '/music/one-giant-consciousness':
-            this.bgImg = 'albumFiveBgImg';
-            break;
-          case '/music/afar-tylepathy-remixes':
-            this.bgImg = 'albumSixBgImg';
-            break;
-          case '/music/lily-pad-lullaby-symphony':
-            this.bgImg = 'albumSevenBgImg';
-            break;
-          case '/music/breath-portal-to-stillness':
-            this.bgImg = 'albumEightBgImg';
-            break;
-          case '/music/the-mycelium-is-remixed':
-            this.bgImg = 'albumNineBgImg';
-            break;
-          case '/music/dreamstep-lovescape-suspended-reverb-mix':
-            this.bgImg = 'albumTenBgImg';
-            break;
-            case '/music/fragrance-regenerated':
-              this.bgImg = 'albumElevenBgImg';
-              break;
-          case '/':
-            this.bgImg = 'homeBgImg';
-            break;
-          case '/about':
-            this.bgImg = 'albumSixBgImg';
-            break;
+      .subscribe(() => {
+        let route = this.route.root;
+        while (route.firstChild) {
+          // Find the last activated route
+          route = route.firstChild;
         }
 
-        if (this.myUrl.url === '/') {
-          this.isHomepage = true;
-        } else {
-          this.isHomepage = false;
+        if (route.snapshot.data.bgImg) {
+          this.bgImg = route.snapshot.data.bgImg;
         }
 
-        if (this.myUrl.url === '/music') {
-          this.isMainMusicPage = true;
-        } else {
-          this.isMainMusicPage = false;
+        if (route.snapshot.data.bgPosition) {
+          this.bgPosition = route.snapshot.data.bgPosition;
         }
       });
   }
 
   getBgImg() {
-    switch (this.bgImg) {
-      case 'musicBgImgAll':
-        return 'music-bg-img-all';
-      // Featured Release
-      case 'homeBgImg':
-        return 'album-eight-bg-img';
-      case 'albumOneBgImg':
-        return 'album-one-bg-img';
-      case 'albumTwoBgImg':
-        return 'album-two-bg-img';
-      case 'albumThreeBgImg':
-        return 'album-three-bg-img';
-      case 'albumFourBgImg':
-        return 'album-four-bg-img';
-      case 'aboutBgImgAll':
-        return 'album-four-bg-img';
-      case 'albumFiveBgImg':
-        return 'album-five-bg-img';
-      case 'albumSixBgImg':
-        return 'album-six-bg-img';
-      case 'albumSevenBgImg':
-        return 'album-seven-bg-img';
-        case 'albumEightBgImg':
-          return 'album-eight-bg-img';
-        case 'albumNineBgImg':
-          return 'album-nine-bg-img';
-        case 'albumTenBgImg':
-          return 'album-ten-bg-img';
-        case 'albumElevenBgImg':
-          return 'album-eleven-bg-img';
-    }
+    const config = this.imageConfig[this.bgImg];
+    return config ? config.imgClass : 'default-img';
   }
 
   getBgPosition() {
-    switch (this.bgImg) {
-      case 'musicBgImgAll':
-        return 'bottom';
-      case 'albumOneBgImg':
-        return 'center';
-      case 'albumTwoBgImg':
-        return 'center';
-      case 'albumThreeBgImg':
-        return 'center';
-      case 'homeBgImg':
-        return 'center';
-      case 'albumFourBgImg':
-        return 'top';
-      case 'aboutBgImgAll':
-        return 'top';
-      case 'albumFiveBgImg':
-        return 'center';
-      case 'albumSixBgImg':
-        return 'top';
-      case 'albumSevenBgImg':
-        return 'bottom';
-        case 'albumEightBgImg':
-          return 'top';
-    }
+    const config = this.imageConfig[this.bgImg];
+    return config ? config.position : 'default-position';
   }
 }

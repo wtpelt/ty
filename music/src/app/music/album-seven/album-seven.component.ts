@@ -5,11 +5,10 @@ import { otherPlatformsButtonText } from 'src/app/shared/button-label';
 @Component({
   selector: 'app-album-seven',
   templateUrl: './album-seven.component.html',
-  styleUrls: ['./album-seven.component.scss']
+  styleUrls: ['./album-seven.component.scss'],
 })
 export class AlbumSevenComponent {
-  constructor(private router: Router, private route: ActivatedRoute) {}
+  constructor() {}
   title = 'Lily Pad Lullaby Symphony';
   otherPlatformsButtonText = otherPlatformsButtonText;
-
 }

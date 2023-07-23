@@ -1,27 +1,29 @@
-.music-page{
+.music-page {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.featured-release{
+.featured-release {
   text-align: center;
 }
-.latest-release{
+
+.latest-release {
   padding-bottom: 25px;
 }
 
-.social-section, .featured-release{
-  padding-top:25px;
+.social-section,
+.featured-release {
+  padding-top: 25px;
   padding-bottom: 25px;
 }
 
-.social-section{
+.social-section {
   display: flex;
 }
 
-.album-eleven-player-img:hover{
-opacity: .8;
-transition: all 0.2s ease;
+.album-eleven-player-img:hover {
+  opacity: .8;
+  transition: all 0.2s ease;
 }

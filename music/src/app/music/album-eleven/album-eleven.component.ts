@@ -5,11 +5,10 @@ import { otherPlatformsButtonText } from 'src/app/shared/button-label';
 @Component({
   selector: 'app-album-eleven',
   templateUrl: './album-eleven.component.html',
-  styleUrls: ['./album-eleven.component.scss']
+  styleUrls: ['./album-eleven.component.scss'],
 })
 export class AlbumElevenComponent {
-  constructor(private router: Router, private route: ActivatedRoute) {}
+  constructor() {}
   title = 'Fragrance Regenerated';
   otherPlatformsButtonText = otherPlatformsButtonText;
-
 }

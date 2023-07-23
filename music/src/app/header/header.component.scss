@@ -2,34 +2,39 @@
   padding: 10px;
   border-radius: 5px;
 }
-.navbar{
+
+.navbar {
   background-color: #212529db !important;
 }
-.navbar-nav a{
+
+.navbar-nav a {
   font-weight: 400;
 }
-.navbar-nav .nav-link{
+
+.navbar-nav .nav-link {
   text-align: left;
   font-size: 1.5rem;
   text-decoration: none !important;
 }
 
 // Break point for mobile menu
-@media only screen and (max-width: 575px){
-  .navbar-nav .nav-link{
+@media only screen and (max-width: 575px) {
+  .navbar-nav .nav-link {
     text-align: center;
     border: solid 2px;
     padding: 10px;
   }
-  .navbar-nav .nav-item{
+
+  .navbar-nav .nav-item {
     padding-bottom: 5px;
-    }
-    .navbar-nav .nav-item:nth-of-type(1){
-      padding-top: 10px;
-      }
+  }
+
+  .navbar-nav .nav-item:nth-of-type(1) {
+    padding-top: 10px;
+  }
 }
 
-.navbar{
+.navbar {
   background-color: #000000cc !important;
   font-family: 'Gloria Hallelujah', cursive;
   font-family: 'WindSong', cursive;
@@ -39,10 +44,11 @@
   font-family: 'Gruppo', cursive;
 }
 
-.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link{
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show>.nav-link {
   font-weight: 900;
 }
 
-.navbar-dark{
+.navbar-dark {
   text-decoration: auto;
 }

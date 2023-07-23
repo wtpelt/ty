@@ -21,16 +21,9 @@ import { MusicComponent } from './music/music.component';
     LatestMusicComponent,
     FooterComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-  ],
-  exports: [
-    HeaderComponent,
-    HomeComponent,
-    FooterComponent,
-  ],
+  imports: [BrowserModule, AppRoutingModule],
+  exports: [HeaderComponent, HomeComponent, FooterComponent],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

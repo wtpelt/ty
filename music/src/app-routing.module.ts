@@ -13,64 +13,125 @@ import { AlbumThreeComponent } from './app/music/album-three/album-three.compone
 import { AlbumTwoComponent } from './app/music/album-two/album-two.component';
 import { MusicComponent } from './app/music/music.component';
 import { AlbumElevenComponent } from './app/music/album-eleven/album-eleven.component';
+import { HomeComponent } from './app/home/home.component';
+import { LatestMusicComponent } from './app/latest-music/latest-music.component';
 
 const routes: Routes = [
-  { path: 'music', component: MusicComponent ,
-  children: [
-    {
-      path: 'regen-deep-ambient-remixes', // child route path
-      component: AlbumOneComponent , // child route component that the router renders
+  {
+    path: 'music',
+    component: MusicComponent,
+    data: {
+      bgImg: 'musicBgImgAll',
+      bgPosition: 'center',
     },
-    {
-      path: 'regen-ambient-meditations',
-      component: AlbumTwoComponent , // another child route component that the router renders
-    },
-    {
-      path: 'tylepathy-remixes-one-with-nature',
-      component: AlbumThreeComponent , // another child route component that the router renders
-    },
-    {
-      path: 'dreamstep-lovescape',
-      component: AlbumFourComponent , // another child route component that the router renders
-    },
-    {
-      path: 'one-giant-consciousness',
-      component: AlbumFiveComponent , // another child route component that the router renders
-    },
-    {
-      path: 'afar-tylepathy-remixes',
-      component: AlbumSixComponent , // another child route component that the router renders
-    },
-    {
-      path: 'lily-pad-lullaby-symphony',
-      component: AlbumSevenComponent , // another child route component that the router renders
-    },
-    {
-      path: 'breath-portal-to-stillness',
-      component: AlbumEightComponent , // another child route component that the router renders
-    },
-    {
-      path: 'the-mycelium-is-remixed',
-      component: AlbumNineComponent , // another child route component that the router renders
-    },
-    {
-      path: 'dreamstep-lovescape-suspended-reverb-mix',
-      component: AlbumTenComponent , // another child route component that the router renders
-    },
-    {
-      path: 'fragrance-regenerated',
-      component: AlbumElevenComponent , // another child route component that the router renders
-    },
-  ],
-},
-  { path: 'about', component: AboutComponent },
-  { path: '',   redirectTo: '', pathMatch: 'full' }, // redirect to `first-component`
-  // { path: '**', component: PageNotFoundComponent },  //
-
+    children: [
+      {
+        path: 'regen-deep-ambient-remixes',
+        component: AlbumOneComponent,
+        data: {
+          bgImg: 'albumOneBgImg',
+          bgPosition: 'center',
+        },
+      },
+      {
+        path: 'regen-ambient-meditations',
+        component: AlbumTwoComponent,
+        data: {
+          bgImg: 'albumTwoBgImg',
+          bgPosition: 'center',
+        },
+      },
+      {
+        path: 'tylepathy-remixes-one-with-nature',
+        component: AlbumThreeComponent,
+        data: {
+          bgImg: 'albumThreeBgImg',
+          bgPosition: 'center',
+        },
+      },
+      {
+        path: 'dreamstep-lovescape',
+        component: AlbumFourComponent,
+        data: {
+          bgImg: 'albumFourBgImg',
+          bgPosition: 'top',
+        },
+      },
+      {
+        path: 'one-giant-consciousness',
+        component: AlbumFiveComponent,
+        data: {
+          bgImg: 'albumFiveBgImg',
+          bgPosition: 'center',
+        },
+      },
+      {
+        path: 'afar-tylepathy-remixes',
+        component: AlbumSixComponent,
+        data: {
+          bgImg: 'albumSixBgImg',
+          bgPosition: 'top',
+        },
+      },
+      {
+        path: 'lily-pad-lullaby-symphony',
+        component: AlbumSevenComponent,
+        data: {
+          bgImg: 'albumSevenBgImg',
+          bgPosition: 'bottom',
+        },
+      },
+      {
+        path: 'breath-portal-to-stillness',
+        component: AlbumEightComponent,
+        data: {
+          bgImg: 'albumEightBgImg',
+          bgPosition: 'top',
+        },
+      },
+      {
+        path: 'the-mycelium-is-remixed',
+        component: AlbumNineComponent,
+        data: {
+          bgImg: 'albumNineBgImg',
+        },
+      },
+      {
+        path: 'dreamstep-lovescape-suspended-reverb-mix',
+        component: AlbumTenComponent,
+        data: {
+          bgImg: 'albumTenBgImg',
+        },
+      },
+      {
+        path: 'fragrance-regenerated',
+        component: AlbumElevenComponent,
+        data: {
+          bgImg: 'albumElevenBgImg',
+        },
+      },
+      {
+        path: '',
+        component: LatestMusicComponent,
+        // put the latest album's bgImg variable here
+        data: { bgImg: 'albumElevenBgImg', bgPosition: 'center' },
+      },
+    ],
+  },
+  {
+    path: 'about',
+    component: AboutComponent,
+    data: { bgImg: 'albumSixBgImg', bgPosition: 'center' },
+  },
+  {
+    path: '',
+    component: HomeComponent,
+    data: { bgImg: 'homeBgImg', bgPosition: 'center' },
+  },
 ];
-// configures NgModule imports and exports
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

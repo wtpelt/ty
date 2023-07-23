@@ -1,4 +1,4 @@
-.about-page{
+.about-page {
   padding: 50px;
   display: flex;
   justify-content: center;
@@ -7,11 +7,11 @@
   padding-top: 25px;
 }
 
-.featured-release{
+.featured-release {
   text-align: center;
 }
 
-.tylepathy-about-img{
+.tylepathy-about-img {
   width: 500px;
   height: 500px;
   max-width: 500px;
@@ -21,17 +21,18 @@
   box-shadow: 5px 5px 8px #000;
 }
 
-@media only screen and (max-width: 500px){
-  .tylepathy-about-img{
+@media only screen and (max-width: 500px) {
+  .tylepathy-about-img {
     width: 90vw;
-    height:90vw;
+    height: 90vw;
   }
-  .about-page{
+
+  .about-page {
     padding: 20px;
   }
 }
 
-.about-write-up{
+.about-write-up {
   padding-top: 25px;
   max-width: 1000px;
   font-weight: 400;
@@ -41,26 +42,27 @@
   box-shadow: 5px 5px 8px #000;
 }
 
-.about-para{
+.about-para {
   padding-top: 5px;
   padding-bottom: 10px;
   text-indent: 0;
 }
 
-.about-para:first-of-type{
+.about-para:first-of-type {
   padding-top: 0;
 }
 
-.about-para:last-of-type{
+.about-para:last-of-type {
   padding-bottom: 0;
 }
 
-@media only screen and (min-width: 628px){
-  .about-write-up{
+@media only screen and (min-width: 628px) {
+  .about-write-up {
     border-radius: 15px;
     text-transform: none;
   }
-  .about-para{
+
+  .about-para {
     text-indent: 50px;
   }
 }

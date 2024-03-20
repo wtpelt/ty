@@ -15,6 +15,7 @@ import { MusicComponent } from './app/music/music.component';
 import { AlbumElevenComponent } from './app/music/album-eleven/album-eleven.component';
 import { HomeComponent } from './app/home/home.component';
 import { LatestMusicComponent } from './app/latest-music/latest-music.component';
+import { AlbumTwelveComponent } from './app/music/album-twelve/album-twelve.component';
 
 const routes: Routes = [
   {
@@ -108,6 +109,13 @@ const routes: Routes = [
         component: AlbumElevenComponent,
         data: {
           bgImg: 'albumElevenBgImg',
+        },
+      },
+      {
+        path: 'lily-pad-lullaby-sweet-dreams-mix',
+        component: AlbumTwelveComponent,
+        data: {
+          bgImg: 'albumTwelveBgImg',
         },
       },
       {

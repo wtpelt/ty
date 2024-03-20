@@ -734,6 +734,13 @@ app-root {
     }
   }
 
+  .album-twelve-player-img {
+    background: {
+      image: url("./assets/album-twelve-artwork-medium.jpg");
+    }
+  }
+
+
   .logo-img-album-one {
     background: {
       image: url("./assets/album-one-artwork-small.jpg");
@@ -797,6 +804,12 @@ app-root {
   .logo-img-album-eleven {
     background: {
       image: url("./assets/album-eleven-artwork-small.jpg");
+    }
+  }
+
+  .logo-img-album-twelve {
+    background: {
+      image: url("./assets/album-twelve-artwork-small.jpg");
     }
   }
 
@@ -864,6 +877,12 @@ app-root {
   .album-eleven-bg-img {
     background: {
       image: url("./assets/album-eleven-artwork-large-cropped.jpg");
+    }
+  }
+
+  .album-twelve-bg-img {
+    background: {
+      image: url("./assets/album-twelve-artwork-large-cropped.jpg");
     }
   }
 
@@ -942,6 +961,12 @@ app-root {
     }
   }
 
+  .album-twelve-player-img {
+    background: {
+      image: url("./assets/album-twelve-artwork-medium.jpg");
+    }
+  }
+
   .logo-img-album-one {
     background: {
       image: url("./assets/album-one-artwork-xs.jpg");
@@ -1005,6 +1030,12 @@ app-root {
   .logo-img-album-eleven {
     background: {
       image: url("./assets/album-eleven-artwork-xs.jpg");
+    }
+  }
+
+  .logo-img-album-twelve {
+    background: {
+      image: url("./assets/album-twelve-artwork-xs.jpg");
     }
   }
 
@@ -1072,6 +1103,12 @@ app-root {
   .album-eleven-bg-img {
     background: {
       image: url("./assets/album-eleven-artwork-medium-cropped.jpg");
+    }
+  }
+
+  .album-twelve-bg-img {
+    background: {
+      image: url("./assets/album-twelve-artwork-medium-cropped.jpg");
     }
   }
 

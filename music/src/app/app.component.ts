@@ -74,6 +74,10 @@ export class AppComponent {
       imgClass: 'album-eleven-bg-img',
       position: this.defaultPosition,
     },
+    albumTwelveBgImg: {
+      imgClass: 'album-twelve-bg-img',
+      position: this.defaultPosition,
+    },
     homeBgImg: {
       imgClass: this.homeBgImg,
       position: this.defaultPosition,

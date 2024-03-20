@@ -21,6 +21,7 @@ export class HeaderComponent {
   albumNine = '/music/the-mycelium-is-remixed';
   albumTen = '/music/dreamstep-lovescape-suspended-reverb-mix';
   albumEleven = '/music/fragrance-regenerated';
+  albumTwelve = '/music/lily-pad-lullaby-sweet-dreams-mix';
 
   constructor(private router: Router, private route: ActivatedRoute) {}
   ngOnInit(): void {
@@ -41,7 +42,8 @@ export class HeaderComponent {
           this.myUrl.url === this.albumEight ||
           this.myUrl.url === this.albumNine ||
           this.myUrl.url === this.albumTen ||
-          this.myUrl.url === this.albumEleven
+          this.myUrl.url === this.albumEleven ||
+          this.myUrl.url === this.albumTwelve
         ) {
           this.title = 'Music';
         } else if (this.myUrl.url === '/about') {

@@ -22,6 +22,7 @@ export class MusicComponent {
   albumNine = '/music/the-mycelium-is-remixed';
   albumTen = '/music/dreamstep-lovescape-suspended-reverb-mix';
   albumEleven = '/music/fragrance-regenerated';
+  albumTwelve = '/music/lily-pad-lullaby-sweet-dreams-mix';
 
   constructor(private route: ActivatedRoute) {}
 

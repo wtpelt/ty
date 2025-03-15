@@ -16,6 +16,10 @@ import { AlbumElevenComponent } from './app/music/album-eleven/album-eleven.comp
 import { HomeComponent } from './app/home/home.component';
 import { LatestMusicComponent } from './app/latest-music/latest-music.component';
 import { AlbumTwelveComponent } from './app/music/album-twelve/album-twelve.component';
+import { Album13Component } from './app/music/album-13/album-13.component';
+import { Album14Component } from './app/music/album-14/album-14.component';
+import { Album15Component } from './app/music/album-15/album-15.component';
+import { Album16Component } from './app/music/album-16/album-16.component';
 
 const routes: Routes = [
   {
@@ -116,6 +120,34 @@ const routes: Routes = [
         component: AlbumTwelveComponent,
         data: {
           bgImg: 'albumTwelveBgImg',
+        },
+      },
+      {
+        path: 'ripples-through-time',
+        component: Album13Component,
+        data: {
+          bgImg: 'album13BgImg',
+        },
+      },
+      {
+        path: 'forest-guardians-remixed',
+        component: Album14Component,
+        data: {
+          bgImg: 'album14BgImg',
+        },
+      },
+      {
+        path: 'eta-carinae-reborn-in-a-nebula',
+        component: Album15Component,
+        data: {
+          bgImg: 'album15BgImg',
+        },
+      },
+      {
+        path: 'organic-intelligence-regenerated',
+        component: Album16Component,
+        data: {
+          bgImg: 'album16BgImg',
         },
       },
       {

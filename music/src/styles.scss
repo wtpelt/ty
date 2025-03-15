@@ -740,6 +740,30 @@ app-root {
     }
   }
 
+  .album-13-player-img {
+    background: {
+      image: url("./assets/album-13/album-13-artwork-medium.jpg");
+    }
+  }
+
+  .album-14-player-img {
+    background: {
+      image: url("./assets/album-14/album-14-artwork-medium.jpg");
+    }
+  }
+
+  .album-15-player-img {
+    background: {
+      image: url("./assets/album-15/album-15-artwork-medium.jpg");
+    }
+  }
+
+  .album-16-player-img {
+    background: {
+      image: url("./assets/album-16/album-16-artwork-medium.jpg");
+    }
+  }
+
 
   .logo-img-album-one {
     background: {
@@ -813,6 +837,30 @@ app-root {
     }
   }
 
+  .logo-img-album-13 {
+    background: {
+      image: url("./assets/album-13/album-13-artwork-small.jpg");
+    }
+  }
+
+  .logo-img-album-14 {
+    background: {
+      image: url("./assets/album-14/album-14-artwork-small.jpg");
+    }
+  }
+
+  .logo-img-album-15 {
+    background: {
+      image: url("./assets/album-15/album-15-artwork-small.jpg");
+    }
+  }
+
+  .logo-img-album-16 {
+    background: {
+      image: url("./assets/album-16/album-16-artwork-small.jpg");
+    }
+  }
+
   .album-one-bg-img {
     background: {
       image: url("./assets/album-one-artwork-large-cropped.jpg");
@@ -883,6 +931,30 @@ app-root {
   .album-twelve-bg-img {
     background: {
       image: url("./assets/album-twelve-artwork-large-cropped.jpg");
+    }
+  }
+
+  .album-13-bg-img {
+    background: {
+      image: url("./assets/album-13/album-13-artwork-large-cropped.jpg");
+    }
+  }
+
+  .album-14-bg-img {
+    background: {
+      image: url("./assets/album-14/album-14-artwork-large-cropped.jpg");
+    }
+  }
+
+  .album-15-bg-img {
+    background: {
+      image: url("./assets/album-15/album-15-artwork-large-cropped.jpg");
+    }
+  }
+
+  .album-16-bg-img {
+    background: {
+      image: url("./assets/album-16/album-16-artwork-large-cropped.jpg");
     }
   }
 
@@ -967,6 +1039,30 @@ app-root {
     }
   }
 
+  .album-13-player-img {
+    background: {
+      image: url("./assets/album-13/album-13-artwork-medium.jpg");
+    }
+  }
+
+  .album-14-player-img {
+    background: {
+      image: url("./assets/album-14/album-14-artwork-medium.jpg");
+    }
+  }
+
+  .album-15-player-img {
+    background: {
+      image: url("./assets/album-15/album-15-artwork-medium.jpg");
+    }
+  }
+
+  .album-16-player-img {
+    background: {
+      image: url("./assets/album-16/album-16-artwork-medium.jpg");
+    }
+  }
+
   .logo-img-album-one {
     background: {
       image: url("./assets/album-one-artwork-xs.jpg");
@@ -1036,6 +1132,30 @@ app-root {
   .logo-img-album-twelve {
     background: {
       image: url("./assets/album-twelve-artwork-xs.jpg");
+    }
+  }
+
+  .logo-img-album-13 {
+    background: {
+      image: url("./assets/album-13/album-13-artwork-xs.jpg");
+    }
+  }
+
+  .logo-img-album-14 {
+    background: {
+      image: url("./assets/album-14/album-14-artwork-xs.jpg");
+    }
+  }
+
+  .logo-img-album-15 {
+    background: {
+      image: url("./assets/album-15/album-15-artwork-xs.jpg");
+    }
+  }
+
+  .logo-img-album-16 {
+    background: {
+      image: url("./assets/album-16/album-16-artwork-xs.jpg");
     }
   }
 
@@ -1112,9 +1232,30 @@ app-root {
     }
   }
 
-  #tracklist li .tracknum,
-  #tracklist li .tracktitle,
-  #tracklist li .currenttime,
+  .album-13-bg-img {
+    background: {
+      image: url("./assets/album-13/album-13-artwork-medium-cropped.jpg");
+    }
+  }
+
+  .album-14-bg-img {
+    background: {
+      image: url("./assets/album-14/album-14-artwork-medium-cropped.jpg");
+    }
+  }
+
+  .album-15-bg-img {
+    background: {
+      image: url("./assets/album-15/album-15-artwork-medium-cropped.jpg");
+    }
+  }
+
+  .album-16-bg-img {
+    background: {
+      image: url("./assets/album-16/album-16-artwork-medium-cropped.jpg");
+    }
+  }
+
   #tracklist li .tracktime {
     font-size: 14px !important;
   }

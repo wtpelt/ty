@@ -1,4 +1,4 @@
-<div id="full-wrap" [ngClass]="getBgImg()" [style.background-position]="getBgPosition()">
+<div id="full-wrap" [ngClass]="getBgImg()" [style.background-position]="getBgPosition()" [style.background-size]="getBgSize()">
   <app-header></app-header>
   <app-home *ngIf="isHomepage"></app-home>
   <router-outlet></router-outlet>

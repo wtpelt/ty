@@ -22,6 +22,10 @@ export class HeaderComponent {
   albumTen = '/music/dreamstep-lovescape-suspended-reverb-mix';
   albumEleven = '/music/fragrance-regenerated';
   albumTwelve = '/music/lily-pad-lullaby-sweet-dreams-mix';
+  album13 = '/music/ripples-through-time';
+  album14 = '/music/forest-guardians-remixed';
+  album15 = '/music/eta-carinae-reborn-in-a-nebula';
+  album16 = '/music/organic-intelligence-regenerated';
 
   constructor(private router: Router, private route: ActivatedRoute) {}
   ngOnInit(): void {

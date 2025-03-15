@@ -6,6 +6,7 @@ import { filter } from 'rxjs/operators';
 interface ImageConfig {
   imgClass: string;
   position: string;
+  bgSize?: string;  // Add optional bgSize property
 }
 
 @Component({
@@ -21,6 +22,8 @@ export class AppComponent {
   isHomepage: boolean;
   isMainMusicPage: boolean;
   defaultPosition: string = 'center';
+  defaultBgSize: string = 'contain';
+
   // whatever image you want to feature for the homepage
   homeBgImg: string = 'album-eight-bg-img';
 
@@ -78,6 +81,22 @@ export class AppComponent {
       imgClass: 'album-twelve-bg-img',
       position: this.defaultPosition,
     },
+    album13BgImg: {
+      imgClass: 'album-13-bg-img',
+      position: this.defaultPosition,
+    },
+    album14BgImg: {
+      imgClass: 'album-14-bg-img',
+      position: this.defaultPosition,
+    },
+    album15BgImg: {
+      imgClass: 'album-15-bg-img',
+      position: this.defaultPosition,
+    },
+    album16BgImg: {
+      imgClass: 'album-16-bg-img',
+      position: this.defaultPosition,
+    },
     homeBgImg: {
       imgClass: this.homeBgImg,
       position: this.defaultPosition,
@@ -114,5 +133,10 @@ export class AppComponent {
   getBgPosition() {
     const config = this.imageConfig[this.bgImg];
     return config ? config.position : 'default-position';
+  }
+
+  getBgSize() {
+    const config = this.imageConfig[this.bgImg];
+    return config?.bgSize || 'cover';  // Default to 'cover' if not specified
   }
 }

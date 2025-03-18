@@ -97,6 +97,10 @@ export class AppComponent {
       imgClass: 'album-16-bg-img',
       position: this.defaultPosition,
     },
+    album17BgImg: {
+      imgClass: 'album-17-bg-img',
+      position: this.defaultPosition,
+    },
     homeBgImg: {
       imgClass: this.homeBgImg,
       position: this.defaultPosition,

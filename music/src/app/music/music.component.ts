@@ -27,6 +27,7 @@ export class MusicComponent {
   album14 = '/music/forest-guardians-remixed';
   album15 = '/music/eta-carinae-reborn-in-a-nebula';
   album16 = '/music/organic-intelligence-regenerated';
+  album17 = '/music/cesty-snu';
 
   constructor(private route: ActivatedRoute) {}
 

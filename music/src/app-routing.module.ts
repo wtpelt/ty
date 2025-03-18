@@ -20,6 +20,7 @@ import { Album13Component } from './app/music/album-13/album-13.component';
 import { Album14Component } from './app/music/album-14/album-14.component';
 import { Album15Component } from './app/music/album-15/album-15.component';
 import { Album16Component } from './app/music/album-16/album-16.component';
+import { Album17Component } from './app/music/album-17/album-17.component';
 
 const routes: Routes = [
   {
@@ -148,6 +149,13 @@ const routes: Routes = [
         component: Album16Component,
         data: {
           bgImg: 'album16BgImg',
+        },
+      },
+      {
+        path: 'cesty-snu',
+        component: Album17Component,
+        data: {
+          bgImg: 'album17BgImg',
         },
       },
       {

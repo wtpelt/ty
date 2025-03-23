@@ -528,6 +528,10 @@ app-root {
   min-height: 70vh;
 }
 
+.album-section-home {
+  min-height: unset;
+}
+
 .album-iframe {
   animation-name: fade-in;
   animation-duration: 1s;
@@ -596,7 +600,7 @@ app-root {
   }
 
   .web-sub-sect {
-    width: 100vw;
+    // width: 100vw;
   }
 }
 
@@ -649,10 +653,34 @@ app-root {
 }
 
 .spotify-tylepathy-preview {
-  width: 100%;
+  width: 50%;
 }
 
-@media only screen and (max-width: 500px) {
+
+@media only screen and (orientation: portrait) and (max-width: 1023px) {
+  .spotify-tylepathy-preview {
+    width: 65%;
+  }
+}
+
+
+
+
+
+@media only screen and (orientation: landscape) and (max-width: 1023px) {
+  .spotify-tylepathy-preview {
+    width: 90vw;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 767px) {
+  .spotify-tylepathy-preview {
+    width: 65%;
+  }
+}
+
+
+@media only screen  and (orientation: portrait) and (max-width: 500px) {
   .album-player-img {
     width: 90vw;
     height: 90vw;
@@ -662,6 +690,7 @@ app-root {
     width: 90vw;
   }
 }
+
 
 .logo-imgs {
   background-size: contain;
@@ -770,6 +799,12 @@ app-root {
     }
   }
 
+  .album-18-player-img {
+    background: {
+      image: url("./assets/album-18/album-18-artwork-medium.jpg");
+    }
+  }
+
 
   .logo-img-album-one {
     background: {
@@ -873,6 +908,12 @@ app-root {
     }
   }
 
+  .logo-img-album-18 {
+    background: {
+      image: url("./assets/album-18/album-18-artwork-small.jpg");
+    }
+  }
+
   .album-one-bg-img {
     background: {
       image: url("./assets/album-one-artwork-large-cropped.jpg");
@@ -903,8 +944,7 @@ app-root {
     }
   }
 
-  .album-six-bg-img,
-  .music-bg-img-all {
+  .album-six-bg-img {
     background: {
       image: url("./assets/album-six-artwork-large-cropped.jpg");
     }
@@ -970,9 +1010,15 @@ app-root {
     }
   }
 
-  .album-17-bg-img {
+  .album-17-bg-img, .music-bg-img-all {
     background: {
-      image: url("./assets/album-17/album-17-artwork-large-cropped.png");
+      image: url("./assets/album-17/album-17-artwork-large-cropped.jpg");
+    }
+  }
+
+  .album-18-bg-img {
+    background: {
+      image: url("./assets/album-18/album-18-artwork-large-cropped.jpg");
     }
   }
 
@@ -1087,6 +1133,12 @@ app-root {
     }
   }
 
+  .album-18-player-img {
+    background: {
+      image: url("./assets/album-18/album-18-artwork-medium.jpg");
+    }
+  }
+
   .logo-img-album-one {
     background: {
       image: url("./assets/album-one-artwork-xs.jpg");
@@ -1189,6 +1241,12 @@ app-root {
     }
   }
 
+  .logo-img-album-18 {
+    background: {
+      image: url("./assets/album-18/album-18-artwork-xs.jpg");
+    }
+  }
+
   .album-one-bg-img {
     background: {
       image: url("./assets/album-one-artwork-medium-cropped.jpg");
@@ -1219,8 +1277,7 @@ app-root {
     }
   }
 
-  .album-six-bg-img,
-  .music-bg-img-all {
+  .album-six-bg-img {
     background: {
       image: url("./assets/album-six-artwork-medium-cropped.jpg");
     }
@@ -1286,11 +1343,18 @@ app-root {
     }
   }
 
-  .album-17-bg-img {
+  .album-17-bg-img, .music-bg-img-all {
     background: {
-      image: url("./assets/album-17/album-17-artwork-medium-cropped.png");
+      image: url("./assets/album-17/album-17-artwork-medium-cropped.jpg");
     }
   }
+
+  .album-18-bg-img {
+    background: {
+      image: url("./assets/album-18/album-18-artwork-medium-cropped.jpg");
+    }
+  }
+
 
   #tracklist li .tracktime {
     font-size: 14px !important;
@@ -1361,6 +1425,21 @@ body {
   box-shadow: 5px 10px 8px #000;
 }
 
+@media only screen and (min-width: 1150px) {
+  .album-video-iframe {
+  margin-right: 1rem;
+  margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 1149px) {
+  .album-video-iframe {
+  margin-right: 0;
+  margin-bottom: 1rem;
+  }
+}
+
+
 .album-video-div iframe .theme-dark #nonartarea {
   background-color: #011a2e;
 }
@@ -1370,7 +1449,11 @@ body {
   letter-spacing: .5px;
 }
 
-.social-row-footer a,
-.sndClickLink {
-  cursor: alias;
+// .social-row-footer a,
+// .sndClickLink {
+//   cursor: alias;
+// }
+
+.sndClickLink{
+  margin-top: 0.5rem;
 }

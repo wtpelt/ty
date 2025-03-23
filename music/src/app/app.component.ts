@@ -25,7 +25,7 @@ export class AppComponent {
   defaultBgSize: string = 'contain';
 
   // whatever image you want to feature for the homepage
-  homeBgImg: string = 'album-eight-bg-img';
+  homeBgImg: string = 'album-18-bg-img';
 
   // Object to store image configuration against respective keys
   private imageConfig: { [key: string]: ImageConfig } = {
@@ -101,6 +101,10 @@ export class AppComponent {
       imgClass: 'album-17-bg-img',
       position: this.defaultPosition,
     },
+    album18BgImg: {
+      imgClass: 'album-18-bg-img',
+      position: this.defaultPosition,
+    },
     homeBgImg: {
       imgClass: this.homeBgImg,
       position: this.defaultPosition,
@@ -141,6 +145,6 @@ export class AppComponent {
 
   getBgSize() {
     const config = this.imageConfig[this.bgImg];
-    return config?.bgSize || 'cover';  // Default to 'cover' if not specified
+    return config?.bgSize || 'cover';
   }
 }

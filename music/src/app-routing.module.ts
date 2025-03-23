@@ -21,7 +21,7 @@ import { Album14Component } from './app/music/album-14/album-14.component';
 import { Album15Component } from './app/music/album-15/album-15.component';
 import { Album16Component } from './app/music/album-16/album-16.component';
 import { Album17Component } from './app/music/album-17/album-17.component';
-
+import { Album18Component } from './app/music/album-18/album-18.component';
 const routes: Routes = [
   {
     path: 'music',
@@ -159,10 +159,17 @@ const routes: Routes = [
         },
       },
       {
+        path: 'ripples-through-time-haquin-revibe',
+        component: Album18Component,
+        data: {
+          bgImg: 'album18BgImg',
+        },
+      },
+      {
         path: '',
         component: LatestMusicComponent,
-        // put the latest album's bgImg variable here
-        data: { bgImg: 'albumElevenBgImg', bgPosition: 'center' },
+        // put the latest/featured album's bgImg variable here
+        data: { bgImg: 'album17BgImg', bgPosition: 'center' },
       },
     ],
   },

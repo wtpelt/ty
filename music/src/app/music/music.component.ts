@@ -28,7 +28,7 @@ export class MusicComponent {
   album15 = '/music/eta-carinae-reborn-in-a-nebula';
   album16 = '/music/organic-intelligence-regenerated';
   album17 = '/music/cesty-snu';
-
+  album18 = '/music/ripples-through-time-haquin-revibe';
   constructor(private route: ActivatedRoute) {}
 
   title = 'music';

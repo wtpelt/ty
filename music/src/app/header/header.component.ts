@@ -26,8 +26,8 @@ export class HeaderComponent {
   album14 = '/music/forest-guardians-remixed';
   album15 = '/music/eta-carinae-reborn-in-a-nebula';
   album16 = '/music/organic-intelligence-regenerated';
-  album17 = '/music/cesty-snu';
-
+  album17 = '/music/ripples-through-time-haquin-revibe';
+  album18 = '/music/cesty-snu';
 
   constructor(private router: Router, private route: ActivatedRoute) {}
   ngOnInit(): void {
@@ -49,7 +49,13 @@ export class HeaderComponent {
           this.myUrl.url === this.albumNine ||
           this.myUrl.url === this.albumTen ||
           this.myUrl.url === this.albumEleven ||
-          this.myUrl.url === this.albumTwelve
+          this.myUrl.url === this.albumTwelve ||
+          this.myUrl.url === this.album13 ||
+          this.myUrl.url === this.album14 ||
+          this.myUrl.url === this.album15 ||
+          this.myUrl.url === this.album16 ||
+          this.myUrl.url === this.album17 ||
+          this.myUrl.url === this.album18
         ) {
           this.title = 'Music';
         } else if (this.myUrl.url === '/about') {

@@ -8,7 +8,7 @@ import { otherPlatformsButtonText } from '../shared/button-label';
   styleUrls: ['./latest-music.component.scss'],
 })
 export class LatestMusicComponent {
-  title = 'home';
+  title = 'Featured Music';
   otherPlatformsButtonText = otherPlatformsButtonText;
 
   constructor() {}

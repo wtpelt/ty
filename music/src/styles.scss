@@ -599,9 +599,6 @@ app-root {
     width: 90vw;
   }
 
-  .web-sub-sect {
-    // width: 100vw;
-  }
 }
 
 
@@ -653,29 +650,25 @@ app-root {
 }
 
 .spotify-tylepathy-preview {
-  width: 50%;
+  width: 509px;
 }
 
-
-@media only screen and (orientation: portrait) and (max-width: 1023px) {
-  .spotify-tylepathy-preview {
-    width: 65%;
-  }
-}
+// .spotify-playlist-iframe{
+//   height: 2480px;
+// }
 
 
 
 
-
-@media only screen and (orientation: landscape) and (max-width: 1023px) {
-  .spotify-tylepathy-preview {
-    width: 90vw;
-  }
-}
+// @media only screen and (orientation: landscape) and (max-width: 1023px) {
+//   .spotify-tylepathy-preview {
+//     width: 90vw;
+//   }
+// }
 
 @media only screen and (orientation: landscape) and (max-width: 767px) {
   .spotify-tylepathy-preview {
-    width: 65%;
+    width: 80vw;
   }
 }
 
@@ -687,7 +680,7 @@ app-root {
   }
 
   .spotify-tylepathy-preview {
-    width: 90vw;
+    width: 80vw;
   }
 }
 

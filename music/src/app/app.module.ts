@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from 'src/app-routing.module';
 import { AboutComponent } from './about/about.component';
@@ -21,7 +22,7 @@ import { MusicComponent } from './music/music.component';
     LatestMusicComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
   exports: [HeaderComponent, HomeComponent, FooterComponent],
   providers: [],
   bootstrap: [AppComponent],

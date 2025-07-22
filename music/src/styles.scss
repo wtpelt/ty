@@ -26,11 +26,8 @@ hr {
 body {
   width: 100%;
   height: auto;
-  display: inline-flex;
   margin: 0;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 0;
 }
 
 #music-section {
@@ -1562,4 +1559,29 @@ body {
 
 .sndClickLink{
   margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Ensure proper viewport setup */
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Route Animation Container - Prevent Layout Shifts */
+.route-animation {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Prevent content flash during route transitions */
+.route-animation > * {
+  will-change: opacity, transform;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.privacy-page{
+  display: flex !important;
 }

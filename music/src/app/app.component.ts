@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { routeAnimations } from './animations';
@@ -17,7 +17,7 @@ interface ImageConfig {
   styleUrls: ['./app.component.scss'],
   animations: [routeAnimations]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'home';
   public name: string;
   bgImg: string;
@@ -120,7 +120,7 @@ export class AppComponent {
     public animationService: AnimationService
   ) {}
 
-  ngOnInit(): void {
+    ngOnInit(): void {
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => {

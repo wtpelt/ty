@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { LatestMusicComponent } from './latest-music/latest-music.component';
 import { MusicComponent } from './music/music.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MusicComponent } from './music/music.component';
     HomeComponent,
     LatestMusicComponent,
     FooterComponent,
+    PrivacyComponent,
   ],
   imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
   exports: [HeaderComponent, HomeComponent, FooterComponent],

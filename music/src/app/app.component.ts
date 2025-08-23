@@ -1,8 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
-import { routeAnimations } from './animations';
-import { AnimationService } from './services/animation.service';
 
 // Interface to define the structure of an image configuration
 interface ImageConfig {
@@ -15,9 +13,8 @@ interface ImageConfig {
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  animations: [routeAnimations]
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'home';
   public name: string;
   bgImg: string;
@@ -114,13 +111,9 @@ export class AppComponent implements OnInit {
     },
   };
 
-  constructor(
-    private router: Router,
-    private route: ActivatedRoute,
-    public animationService: AnimationService
-  ) {}
+  constructor(private router: Router, private route: ActivatedRoute) {}
 
-    ngOnInit(): void {
+  ngOnInit(): void {
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => {
@@ -153,12 +146,5 @@ export class AppComponent implements OnInit {
   getBgSize() {
     const config = this.imageConfig[this.bgImg];
     return config?.bgSize || 'cover';
-  }
-
-  prepareRoute(outlet: any) {
-    if (outlet && outlet.activatedRouteData) {
-      return outlet.activatedRouteData['animation'] || 'default';
-    }
-    return 'default';
   }
 }

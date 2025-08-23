@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from 'src/app-routing.module';
 import { AboutComponent } from './about/about.component';
@@ -11,7 +10,6 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { LatestMusicComponent } from './latest-music/latest-music.component';
 import { MusicComponent } from './music/music.component';
-import { PrivacyComponent } from './privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -22,9 +20,8 @@ import { PrivacyComponent } from './privacy/privacy.component';
     HomeComponent,
     LatestMusicComponent,
     FooterComponent,
-    PrivacyComponent,
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule],
   exports: [HeaderComponent, HomeComponent, FooterComponent],
   providers: [],
   bootstrap: [AppComponent],

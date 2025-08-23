@@ -1,18 +1,7 @@
-<div id="full-wrap"
-     [ngClass]="getBgImg()"
-     [style.background-position]="getBgPosition()"
-     [style.background-size]="getBgSize()"
-     [@routeAnimations]="prepareRoute(outlet)">
-  <!-- Loading indicator -->
-  <div class="route-loading" [class.active]="animationService.isLoading$ | async">
-    <div class="loading-spinner"></div>
-  </div>
-
+<div id="full-wrap" [ngClass]="getBgImg()" [style.background-position]="getBgPosition()" [style.background-size]="getBgSize()">
   <app-header></app-header>
   <app-home *ngIf="isHomepage"></app-home>
-  <div class="route-animation">
-    <router-outlet #outlet="outlet"></router-outlet>
-  </div>
+  <router-outlet></router-outlet>
   <app-latest-music *ngIf="isMainMusicPage"></app-latest-music>
   <app-footer></app-footer>
 </div>

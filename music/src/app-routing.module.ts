@@ -22,8 +22,6 @@ import { Album15Component } from './app/music/album-15/album-15.component';
 import { Album16Component } from './app/music/album-16/album-16.component';
 import { Album17Component } from './app/music/album-17/album-17.component';
 import { Album18Component } from './app/music/album-18/album-18.component';
-import { PrivacyComponent } from './app/privacy/privacy.component';
-
 const routes: Routes = [
   {
     path: 'music',
@@ -31,7 +29,6 @@ const routes: Routes = [
     data: {
       bgImg: 'musicBgImgAll',
       bgPosition: 'center',
-      animation: 'music'
     },
     children: [
       {
@@ -40,7 +37,6 @@ const routes: Routes = [
         data: {
           bgImg: 'albumOneBgImg',
           bgPosition: 'center',
-          animation: 'album'
         },
       },
       {
@@ -49,7 +45,6 @@ const routes: Routes = [
         data: {
           bgImg: 'albumTwoBgImg',
           bgPosition: 'center',
-          animation: 'album'
         },
       },
       {
@@ -58,7 +53,6 @@ const routes: Routes = [
         data: {
           bgImg: 'albumThreeBgImg',
           bgPosition: 'center',
-          animation: 'album'
         },
       },
       {
@@ -67,7 +61,6 @@ const routes: Routes = [
         data: {
           bgImg: 'albumFourBgImg',
           bgPosition: 'top',
-          animation: 'album'
         },
       },
       {
@@ -76,7 +69,6 @@ const routes: Routes = [
         data: {
           bgImg: 'albumFiveBgImg',
           bgPosition: 'center',
-          animation: 'album'
         },
       },
       {
@@ -85,7 +77,6 @@ const routes: Routes = [
         data: {
           bgImg: 'albumSixBgImg',
           bgPosition: 'top',
-          animation: 'album'
         },
       },
       {
@@ -94,7 +85,6 @@ const routes: Routes = [
         data: {
           bgImg: 'albumSevenBgImg',
           bgPosition: 'bottom',
-          animation: 'album'
         },
       },
       {
@@ -103,7 +93,6 @@ const routes: Routes = [
         data: {
           bgImg: 'albumEightBgImg',
           bgPosition: 'top',
-          animation: 'album'
         },
       },
       {
@@ -111,7 +100,6 @@ const routes: Routes = [
         component: AlbumNineComponent,
         data: {
           bgImg: 'albumNineBgImg',
-          animation: 'album'
         },
       },
       {
@@ -119,7 +107,6 @@ const routes: Routes = [
         component: AlbumTenComponent,
         data: {
           bgImg: 'albumTenBgImg',
-          animation: 'album'
         },
       },
       {
@@ -127,7 +114,6 @@ const routes: Routes = [
         component: AlbumElevenComponent,
         data: {
           bgImg: 'albumElevenBgImg',
-          animation: 'album'
         },
       },
       {
@@ -135,7 +121,6 @@ const routes: Routes = [
         component: AlbumTwelveComponent,
         data: {
           bgImg: 'albumTwelveBgImg',
-          animation: 'album'
         },
       },
       {
@@ -143,7 +128,6 @@ const routes: Routes = [
         component: Album13Component,
         data: {
           bgImg: 'album13BgImg',
-          animation: 'album'
         },
       },
       {
@@ -151,7 +135,6 @@ const routes: Routes = [
         component: Album14Component,
         data: {
           bgImg: 'album14BgImg',
-          animation: 'album'
         },
       },
       {
@@ -159,7 +142,6 @@ const routes: Routes = [
         component: Album15Component,
         data: {
           bgImg: 'album15BgImg',
-          animation: 'album'
         },
       },
       {
@@ -167,7 +149,6 @@ const routes: Routes = [
         component: Album16Component,
         data: {
           bgImg: 'album16BgImg',
-          animation: 'album'
         },
       },
       {
@@ -175,7 +156,6 @@ const routes: Routes = [
         component: Album17Component,
         data: {
           bgImg: 'album17BgImg',
-          animation: 'album'
         },
       },
       {
@@ -183,31 +163,25 @@ const routes: Routes = [
         component: Album18Component,
         data: {
           bgImg: 'album18BgImg',
-          animation: 'album'
         },
       },
       {
         path: '',
         component: LatestMusicComponent,
         // put the latest/featured album's bgImg variable here
-        data: { bgImg: 'album17BgImg', bgPosition: 'center', animation: 'latest' },
+        data: { bgImg: 'album17BgImg', bgPosition: 'center' },
       },
     ],
   },
   {
     path: 'about',
     component: AboutComponent,
-    data: { bgImg: 'albumSixBgImg', bgPosition: 'center', animation: 'about' },
-  },
-  {
-    path: 'privacy',
-    component: PrivacyComponent,
-    data: { bgImg: 'albumFourBgImg', bgPosition: 'center', animation: 'privacy' },
+    data: { bgImg: 'albumSixBgImg', bgPosition: 'center' },
   },
   {
     path: '',
     component: HomeComponent,
-    data: { bgImg: 'homeBgImg', bgPosition: 'center', animation: 'home' },
+    data: { bgImg: 'homeBgImg', bgPosition: 'center' },
   },
 ];
 

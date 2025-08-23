@@ -31,36 +31,3 @@
 // .sndClickLink {
 //   background-color: #763b22;
 // }
-
-.back-to-top {
-  position: sticky !important;
-  width: 50px !important;
-  height: 50px !important;
-  background-color: rgba(0, 0, 0, 0.7) !important;
-  color: white !important;
-  border: none !important;
-  border-radius: 50% !important;
-  cursor: pointer !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  font-size: 18px !important;
-  transition: all 0.3s ease !important;
-  opacity: 0 !important;
-  visibility: hidden !important;
-  z-index: 9999 !important;
-
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.9) !important;
-    transform: translateY(-2px) !important;
-  }
-
-  &.show {
-    opacity: 1 !important;
-    visibility: visible !important;
-  }
-
-  i {
-    color: white !important;
-  }
-}

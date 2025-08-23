@@ -28,20 +28,3 @@ footer {
 footer {
   background-color: #000000cc !important;
 }
-
-.privacy-row {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.privacy-link {
-  color: rgba(255, 255, 255, 0.7);
-  text-decoration: none;
-  font-size: 14px;
-  transition: color 0.3s ease;
-
-  &:hover {
-    color: #4ec5ec;
-    text-decoration: underline;
-  }
-}

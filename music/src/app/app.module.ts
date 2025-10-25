@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 // import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from 'src/app-routing.module';
 import { AboutComponent } from './about/about.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
@@ -20,6 +21,7 @@ import { MusicComponent } from './music/music.component';
     HomeComponent,
     LatestMusicComponent,
     FooterComponent,
+    PrivacyComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   exports: [HeaderComponent, HomeComponent, FooterComponent],

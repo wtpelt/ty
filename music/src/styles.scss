@@ -533,9 +533,6 @@ app-root {
 }
 
 .album-iframe {
-  animation-name: fade-in;
-  animation-duration: 1s;
-  animation-timing-function: ease-in;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   box-shadow: 5px 10px 8px #000;
@@ -597,10 +594,6 @@ app-root {
 @media only screen and (max-width: 500px) {
   .album-iframe {
     width: 90vw;
-  }
-
-  .web-sub-sect {
-    // width: 100vw;
   }
 }
 

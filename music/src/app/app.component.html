@@ -1,7 +1,11 @@
 <div id="full-wrap" [ngClass]="getBgImg()" [style.background-position]="getBgPosition()" [style.background-size]="getBgSize()">
   <app-header></app-header>
-  <app-home *ngIf="isHomepage"></app-home>
+  @if (isHomepage) {
+    <app-home></app-home>
+  }
   <router-outlet></router-outlet>
-  <app-latest-music *ngIf="isMainMusicPage"></app-latest-music>
+  @if (isMainMusicPage) {
+    <app-latest-music></app-latest-music>
+  }
   <app-footer></app-footer>
 </div>

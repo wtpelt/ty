@@ -74,10 +74,10 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "music:build:production"
+              "buildTarget": "music:build:production"
             },
             "development": {
-              "browserTarget": "music:build:development"
+              "buildTarget": "music:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "music:build"
+            "buildTarget": "music:build"
           }
         },
         "test": {

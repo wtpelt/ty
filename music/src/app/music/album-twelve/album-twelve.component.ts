@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { otherPlatformsButtonText } from 'src/app/shared/button-label';
 
 @Component({
-  selector: 'app-album-twelve',
-  templateUrl: './album-twelve.component.html',
-  styleUrls: ['./album-twelve.component.scss'],
+    selector: 'app-album-twelve',
+    templateUrl: './album-twelve.component.html',
+    styleUrls: ['./album-twelve.component.scss'],
+    standalone: false
 })
 export class AlbumTwelveComponent {
   constructor() {}

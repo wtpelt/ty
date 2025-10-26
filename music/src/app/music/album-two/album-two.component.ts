@@ -3,8 +3,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { otherPlatformsButtonText } from 'src/app/shared/button-label';
 
 @Component({
-  selector: 'app-album-two',
-  templateUrl: './album-two.component.html',
+    selector: 'app-album-two',
+    templateUrl: './album-two.component.html',
+    standalone: false
 })
 export class AlbumTwoComponent {
   constructor() {}

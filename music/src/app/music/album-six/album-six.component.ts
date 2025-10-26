@@ -3,9 +3,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { otherPlatformsButtonText } from 'src/app/shared/button-label';
 
 @Component({
-  selector: 'app-album-six',
-  templateUrl: './album-six.component.html',
-  styleUrls: ['./album-six.component.scss'],
+    selector: 'app-album-six',
+    templateUrl: './album-six.component.html',
+    styleUrls: ['./album-six.component.scss'],
+    standalone: false
 })
 export class AlbumSixComponent {
   constructor() {}

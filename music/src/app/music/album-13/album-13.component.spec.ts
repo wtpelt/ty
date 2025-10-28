@@ -7,8 +7,8 @@ describe('AlbumTwelveComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [Album13Component],
-    }).compileComponents();
+    imports: [Album13Component],
+}).compileComponents();
   });
 
   beforeEach(() => {

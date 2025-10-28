@@ -27,21 +27,18 @@ describe('HeaderComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
-
-      declarations: [HeaderComponent],
-
-      providers: [
+    imports: [RouterTestingModule, HeaderComponent],
+    providers: [
         {
-          provide: Router,
-          useValue: routerMock,
+            provide: Router,
+            useValue: routerMock,
         },
         {
-          provide: ActivatedRoute,
-          useValue: activatedRouteMock,
+            provide: ActivatedRoute,
+            useValue: activatedRouteMock,
         },
-      ],
-    }).compileComponents();
+    ],
+}).compileComponents();
   });
 
   beforeEach(() => {

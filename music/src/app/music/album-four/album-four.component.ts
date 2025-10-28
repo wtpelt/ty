@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
 import { otherPlatformsButtonText } from 'src/app/shared/button-label';
 
@@ -6,7 +7,7 @@ import { otherPlatformsButtonText } from 'src/app/shared/button-label';
     selector: 'app-album-four',
     templateUrl: './album-four.component.html',
     styleUrls: ['./album-four.component.scss'],
-    standalone: false
+    standalone: true,
 })
 export class AlbumFourComponent {
   constructor() {}

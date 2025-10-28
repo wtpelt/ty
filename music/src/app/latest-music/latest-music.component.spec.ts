@@ -14,14 +14,14 @@ describe('LatestMusicComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [LatestMusicComponent],
-      providers: [
+    imports: [LatestMusicComponent],
+    providers: [
         {
-          provide: ActivatedRoute,
-          useValue: activatedRouteMock,
+            provide: ActivatedRoute,
+            useValue: activatedRouteMock,
         },
-      ],
-    }).compileComponents();
+    ],
+}).compileComponents();
   });
 
   beforeEach(() => {

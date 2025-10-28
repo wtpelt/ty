@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
-import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
+import { Router, ActivatedRoute, NavigationEnd, RouterOutlet } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import { NgClass } from '@angular/common';
+import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { LatestMusicComponent } from './latest-music/latest-music.component';
+import { FooterComponent } from './footer/footer.component';
 
 // Interface to define the structure of an image configuration
 interface ImageConfig {
@@ -13,7 +18,8 @@ interface ImageConfig {
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    standalone: false
+    standalone: true,
+    imports: [NgClass, HeaderComponent, HomeComponent, RouterOutlet, LatestMusicComponent, FooterComponent]
 })
 export class AppComponent {
   title = 'home';

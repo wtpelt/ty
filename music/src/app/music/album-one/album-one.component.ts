@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Router, ActivatedRoute } from '@angular/router';
 import { otherPlatformsButtonText } from 'src/app/shared/button-label';
 
 @Component({
     selector: 'app-album-one',
     templateUrl: './album-one.component.html',
-    standalone: false
+    standalone: true,
 })
 export class AlbumOneComponent {
   constructor() {}

@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
     styleUrls: ['./header.component.scss'],
-    standalone: false
+    standalone: true,
+    imports: [RouterModule]
 })
 export class HeaderComponent {
   myUrl: any;

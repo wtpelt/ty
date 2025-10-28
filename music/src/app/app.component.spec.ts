@@ -38,27 +38,24 @@ describe('AppComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
-      declarations: [
-        [
-          AppComponent,
-          HeaderComponent,
-          FooterComponent,
-          HomeComponent,
-          LatestMusicComponent,
-        ],
-      ],
-      providers: [
+    imports: [RouterTestingModule, [
+            AppComponent,
+            HeaderComponent,
+            FooterComponent,
+            HomeComponent,
+            LatestMusicComponent,
+        ]],
+    providers: [
         {
-          provide: Router,
-          useValue: routerMock,
+            provide: Router,
+            useValue: routerMock,
         },
         {
-          provide: ActivatedRoute,
-          useValue: activatedRouteMock,
+            provide: ActivatedRoute,
+            useValue: activatedRouteMock,
         },
-      ],
-    }).compileComponents();
+    ],
+}).compileComponents();
   });
 
   beforeEach(() => {

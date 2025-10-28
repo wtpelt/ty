@@ -18,10 +18,9 @@ describe('MusicComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
-      declarations: [MusicComponent],
-      providers: [{ provide: ActivatedRoute, useValue: mockActivatedRoute }],
-    }).compileComponents();
+    imports: [RouterTestingModule, MusicComponent],
+    providers: [{ provide: ActivatedRoute, useValue: mockActivatedRoute }],
+}).compileComponents();
   });
 
   beforeEach(() => {

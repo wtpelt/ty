@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Router, ActivatedRoute } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { otherPlatformsButtonText } from '../shared/button-label';
 
 @Component({
     selector: 'app-music',
     templateUrl: './music.component.html',
     styleUrls: ['./music.component.scss'],
-    standalone: false
+    standalone: true,
+    imports: [CommonModule, RouterModule]
 })
 export class MusicComponent {
   bgImg: string;

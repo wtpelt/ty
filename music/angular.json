@@ -16,9 +16,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": {
-              "base": "dist/music"
-            },
+            "outputPath": "dist/music",
             "index": "src/index.html",
             "polyfills": [
               "src/polyfills.ts"
@@ -131,7 +129,9 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "options": {
+            "outputPath": "dist/music/browser"
+          }
         }
       }
     }

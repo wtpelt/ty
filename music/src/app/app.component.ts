@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd, RouterOutlet } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { NgClass } from '@angular/common';
@@ -21,7 +21,7 @@ interface ImageConfig {
     standalone: true,
     imports: [NgClass, HeaderComponent, HomeComponent, RouterOutlet, LatestMusicComponent, FooterComponent]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'home';
   public name: string;
   bgImg: string;

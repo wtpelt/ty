@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, ActivatedRoute } from '@angular/router';
 import { RouterModule } from '@angular/router';
@@ -11,7 +11,7 @@ import { otherPlatformsButtonText } from '../shared/button-label';
     standalone: true,
     imports: [CommonModule, RouterModule]
 })
-export class MusicComponent {
+export class MusicComponent implements OnInit {
   bgImg: string;
   bgPosition: string;
 

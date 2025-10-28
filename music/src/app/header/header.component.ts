@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { filter } from 'rxjs/operators';
@@ -10,7 +10,7 @@ import { filter } from 'rxjs/operators';
     standalone: true,
     imports: [RouterModule]
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   myUrl: any;
   title: string;
   albumOne = '/music/regen-deep-ambient-remixes';

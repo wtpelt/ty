@@ -1,0 +1,16 @@
+{
+  "name": "Tylepathy",
+  "short_name": "Tylepathy",
+  "description": "Tylepathy - Ambient Electronic Music",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#667eea",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

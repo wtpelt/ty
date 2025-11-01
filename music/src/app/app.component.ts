@@ -15,9 +15,9 @@ interface ImageConfig {
 }
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss'],
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
     standalone: true,
     imports: [NgClass, HeaderComponent, HomeComponent, RouterOutlet, LatestMusicComponent, FooterComponent]
 })

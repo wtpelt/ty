@@ -22,13 +22,15 @@
         src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftylepathy.music&tabs=timeline&width=340&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
         class="facebook-feed" width="340" height="1000" style="border: none; overflow: hidden" scrolling="no"
         frameborder="0" title="Tylepathy Facebook Page Feed"
-      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      allow="autoplay *; clipboard-write *; encrypted-media *; picture-in-picture *; web-share *"></iframe>
     </div>
   </div>
 }
 <div class="mt-4 mb-1 spotify-tylepathy-preview">
-  <iframe style="border-radius:12px"
-    src="https://open.spotify.com/embed/playlist/1MbSpfRjYwfvxh7zlsGYe6?utm_source=generator&theme=0" width="100%"
-    height="2630" frameBorder="0" title="Tylepathy Spotify Playlist"
-  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  @if (showSpotifyPlaylist) {
+    <iframe style="border-radius:12px"
+      src="https://open.spotify.com/embed/playlist/1MbSpfRjYwfvxh7zlsGYe6?utm_source=generator&theme=0" width="100%"
+      height="2630" frameBorder="0" title="Tylepathy Spotify Playlist"
+    allow="autoplay *; clipboard-write *; encrypted-media *; fullscreen *; picture-in-picture *" loading="lazy"></iframe>
+  }
 </div>

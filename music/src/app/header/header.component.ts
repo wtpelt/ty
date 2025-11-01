@@ -13,6 +13,7 @@ import { filter } from 'rxjs/operators';
 export class HeaderComponent implements OnInit {
   myUrl: any;
   title: string;
+  isMenuCollapsed = true;
   albumOne = '/music/regen-deep-ambient-remixes';
   albumTwo = '/music/regen-ambient-meditations';
   albumThree = '/music/tylepathy-remixes-one-with-nature';
@@ -37,6 +38,7 @@ export class HeaderComponent implements OnInit {
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe((event) => {
+        this.closeMenu(); // Close mobile menu on navigation
         this.myUrl = event;
         if (this.myUrl.url === '/music') {
           this.title = 'Music';
@@ -69,5 +71,13 @@ export class HeaderComponent implements OnInit {
           this.title = '';
         }
       });
+  }
+
+  toggleMenu(): void {
+    this.isMenuCollapsed = !this.isMenuCollapsed;
+  }
+
+  closeMenu(): void {
+    this.isMenuCollapsed = true;
   }
 }

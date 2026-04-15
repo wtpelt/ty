@@ -22,6 +22,7 @@ import { Album15Component } from './app/music/album-15/album-15.component';
 import { Album16Component } from './app/music/album-16/album-16.component';
 import { Album17Component } from './app/music/album-17/album-17.component';
 import { Album18Component } from './app/music/album-18/album-18.component';
+import { Album19Component } from './app/music/album-19/album-19.component';
 import { PrivacyComponent } from './app/privacy/privacy.component';
 const routes: Routes = [
   {
@@ -164,6 +165,13 @@ const routes: Routes = [
         component: Album18Component,
         data: {
           bgImg: 'album18BgImg',
+        },
+      },
+      {
+        path: 'embers-of-a-forgotten-prayer-tylepathy-remix',
+        component: Album19Component,
+        data: {
+          bgImg: 'album19BgImg',
         },
       },
       {

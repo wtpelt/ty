@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
   defaultBgSize: string = 'contain';
 
   // whatever image you want to feature for the homepage
-  homeBgImg: string = 'album-18-bg-img';
+  homeBgImg: string = 'album-19-bg-img';
 
   // Object to store image configuration against respective keys
   private imageConfig: { [key: string]: ImageConfig } = {
@@ -110,6 +110,10 @@ export class AppComponent implements OnInit {
     },
     album18BgImg: {
       imgClass: 'album-18-bg-img',
+      position: this.defaultPosition,
+    },
+    album19BgImg: {
+      imgClass: 'album-19-bg-img',
       position: this.defaultPosition,
     },
     homeBgImg: {

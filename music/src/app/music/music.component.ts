@@ -33,6 +33,7 @@ export class MusicComponent implements OnInit {
   album16 = '/music/organic-intelligence-regenerated';
   album17 = '/music/cesty-snu';
   album18 = '/music/ripples-through-time-haquin-revibe';
+  album19 = '/music/embers-of-a-forgotten-prayer-tylepathy-remix';
   constructor(private route: ActivatedRoute) {}
 
   title = 'music';

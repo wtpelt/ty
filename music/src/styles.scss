@@ -1033,10 +1033,18 @@ app-root {
     }
   }
 
+  .album-19-home-bg-img {
+    background: {
+      image: url("./assets/album-19/album-19-artwork-large-cropped-v2.png");
+    }
+  }
+
   // ABOUT
   .tylepathy-about-img {
+    background-position: center;
+    background-size: cover !important;
     background: {
-      image: url("./assets/about-tylepathy-v3-large.jpg");
+      image: url("./assets/about-tylepathy-v4-large.jpg");
     }
   }
 }
@@ -1384,14 +1392,22 @@ app-root {
     }
   }
 
+  .album-19-home-bg-img {
+    background: {
+      image: url("./assets/album-19/album-19-artwork-medium-cropped-v2.png");
+    }
+  }
+
 
   #tracklist li .tracktime {
     font-size: 14px !important;
   }
 
   .tylepathy-about-img {
+    background-position: center;
+    background-size: cover !important;
     background: {
-      image: url("./assets/about-tylepathy-v3-small.jpg");
+      image: url("./assets/about-tylepathy-v4-small.jpg");
     }
   }
 }
